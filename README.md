@@ -2,17 +2,30 @@
 Hillmert A. Solano, Faculty of Mines, Universidad Nacional de Colombia
 ## Presentation (video)
 
+
+
 ## 1. Introduction
 The injection of taylored solutions with chemical scalars, such as polymers, surfactants, nanoparticles, salts;  is common in subsurface engineering applications. In hydrocarbon reservoirs, chemical scalars are injected to generate or favour different interactions that improve oil and gas production. On other vein, in Geological Carbon Sequestration (GCS), some studies have shown that scalars allows to increase carbon storage capacity in these operations. Additionally, chemical scalars are used to remove NAPL and solid pollulants from soil and groundwater bodies.
 
 When a chemical scalar is injected into a porous medium, it follows some transport and retention dynamics by the interactions among other scalar particles/molecules (aggregation and disaggregation), the carrier fluid (transport phenomena), and the solid surface (surface phenomena), which govern its deployment. Hence, the understanding of the transport and retention dynamics allows to evaluate chemical species behaviour inside the porous medium, and therefore determine the most favourables conditions targeting better outcomes.
 
 ## 2. Methodology
-In order to address transport and retention dynamic of passive scalars in porous media at the pore-scale, a CFD framework is proposed. 
+This study is addressed under a CFD approach, enabling to evaluate transport and retention phenomena at the pore-scale considering a continuous medium in the pore space. The followed methodology is presented below:
 
 ### Problem Statement
 
+Aiming to simplify this study, a 2D geometry 
 
+Some assumptions are listed below:
+
+<ul>
+  <li>The concentration of the chemical scalar does not affect fluid viscosity.</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+
+![plot](./geometry.jegp)
 
 
 ### Mathematical Formulation and Dimensionless Variables
@@ -21,7 +34,7 @@ As mentioned above, the transport of a scalar depends strongly on fluid flow in 
 
 #### Incompressible flow
 
-In the first hand, Navier-Stokes set of equations are used to model the fluid flow through the porous medium. By this approach, steady flow is considered, so the transient term is neglected. For a 2D problem, this is formed by 3 equations: one for fluid continuity and two for fluid momentum balance (one per dimension). By these equations, pressure and velocity distributions can be estimated for the spatial domain.
+In the first hand, the Navier-Stokes set of equations are used to model the fluid flow through the porous medium. By this approach, steady flow is considered, so the transient term is neglected. For a 2D problem, this is formed by 3 equations: one for fluid continuity and two for fluid momentum balance (one per dimension). By these equations, pressure and velocity distributions can be estimated for the spatial domain.
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large {\frac{\partial u_x}{\partial x}}%2B{\frac{\partial u_y}{\partial y}}=0">
 
@@ -47,11 +60,27 @@ For the grains boundary, a non-slip condition is considered. In this condition, 
 
 Finally, upper and lower boundaries are considered as planes of symmetry. So, pressure, velocity, and their corresponding gradients are equal at the same distance from the planes.
 
-| Dimensionless | Definition | Description |
-| ------------- | ------------- | ------------- |
-| <img src="https://render.githubusercontent.com/render/math?math=\Large N_{Re}">  | <img src="https://render.githubusercontent.com/render/math?math=\Large \frac{v_c l_c}{\nu_c}">  | Reynolds Number  |
-| <img src="https://render.githubusercontent.com/render/math?math=\Large N_{Eu}">  | <img src="https://render.githubusercontent.com/render/math?math=\Large \frac{\Delta P_c}{\rho_c v_c^2}">  | Euler Number  |
+Based on this mathematical model, two dimensionless numbers govern incompressible flow in the porous medium. Reybolds number is the ratio between intertial and viscous forces; meanwhile Ruark number corresponds to the ratio betweeen inertial and pressure forces.
 
+<table>
+  <caption style="text-align:right">Dimensionless numbers for scalar transport problem.</caption>
+  <tr>
+    <th>Dimensionless</th>
+    <th>Definition</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><img src="https://render.githubusercontent.com/render/math?math=\Large N_{Re}"></td>
+    <td><img src="https://render.githubusercontent.com/render/math?math=\Large \frac{v_c l_c}{\nu_c}"></td>
+    <td>Reynolds Number</td>
+  </tr>
+    <tr>
+    <td><img src="https://render.githubusercontent.com/render/math?math=\Large N_{Ru}"></td>
+    <td><img src="https://render.githubusercontent.com/render/math?math=\Large \frac{\rho_c v_c^2}{\Delta P_c}"></td>
+    <td>Ruark Number</td>
+  </tr>
+</table>
+<br>
 
 #### Chemical scalar transport
 On the other hand, chemical scalar transport are modelled by the unsteady Advection-Diffusion (ADR) equation. By this equation, and with a predefined velocity field, the concentration field can be computed:
@@ -76,14 +105,40 @@ For the grains boundary, a model for retention is used to represent the surface 
 
 Finally, as it was assumed for the incompresssible flow problem, upper and lower boundaries are considered as planes of symmetry for concentration too.
 
-| Dimensionless | Definition | Description |
-| ------------- | ------------- | ------------- |
-| <img src="https://render.githubusercontent.com/render/math?math=\Large N_{Pe}">  | <img src="https://render.githubusercontent.com/render/math?math=\Large \frac{u_{in}L}{D}">  | Péclet Number  |
-| <img src="https://render.githubusercontent.com/render/math?math=\Large N_{Da}">  | <img src="https://render.githubusercontent.com/render/math?math=\Large \frac{K_aL^2}{D}">  | Damkhöler Number  |
+For the chemical scalar transport, there are three dimensionless numbers characterising the problem. Péclet number corresponds to the ratio between advection and diffusion fluxes; meanwhile both Damkhöler numbers are defined as ratios between attachment/detachment and diffusion fluxes.
 
+<table>
+  <caption style="text-align:right">Dimensionless numbers for incompressible flow problem.</caption>
+  <tr>
+    <th>Dimensionless</th>
+    <th>Definition</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><img src="https://render.githubusercontent.com/render/math?math=\Large N_{Pe}"></td>
+    <td><img src="https://render.githubusercontent.com/render/math?math=\Large \frac{u_{in}L}{D}"></td>
+    <td>Péclet Number</td>
+  </tr>
+    <tr>
+    <td><img src="https://render.githubusercontent.com/render/math?math=\Large N_{Da,a}"></td>
+    <td><img src="https://render.githubusercontent.com/render/math?math=\Large \frac{K_aL^2}{D}"></td>
+    <td>Damkhöler Number (Attachment) </td>
+  </tr>
+  <tr>
+    <td><img src="https://render.githubusercontent.com/render/math?math=\Large N_{Da,d}"></td>
+    <td><img src="https://render.githubusercontent.com/render/math?math=\Large \frac{K_dL^2}{D}"></td>
+    <td>Damkhöler Number (Detachment) </td>
+  </tr>
+</table>
+<br>
 
+<figure>
+  <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+</figure>
 
 ### Meshing and solution schemes
+
 
 
 
