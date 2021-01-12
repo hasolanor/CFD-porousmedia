@@ -14,7 +14,7 @@ This study is addressed under a CFD approach, enabling to evaluate transport and
 
 ### Problem Statement
 
-Aiming to simplify this study, a 2D geometry 
+Aiming to simplify this study, a 2D regular porous media is generated.
 
 Some assumptions are listed below:
 
@@ -25,11 +25,10 @@ Some assumptions are listed below:
 </ul>
 
 <figure>
-  <img src="geometry.jpeg" alt="Trulli" style="width:50%">
-  <figcaption>Fig.1 - 2D Geometry used in this CFD study.</figcaption>
+  <img src="geometry.jpeg" alt="geometry" style="width: 100px">
+  <img src="boundaries.jpeg" alt="geometry" style="width: 100px">
+  <figcaption>Fig.1 - 2D Geometry used in this CFD study. All dimensions are in meters.</figcaption>
 </figure>
-
-
 
 
 ### Mathematical Formulation and Dimensionless Variables
@@ -67,7 +66,7 @@ Finally, upper and lower boundaries are considered as planes of symmetry. So, pr
 Based on this mathematical model, two dimensionless numbers govern incompressible flow in the porous medium. Reybolds number is the ratio between intertial and viscous forces; meanwhile Ruark number corresponds to the ratio betweeen inertial and pressure forces.
 
 <table>
-  <caption style="text-align:right">Dimensionless numbers for scalar transport problem.</caption>
+  <caption style="text-align:right">Dimensionless numbers for incompressible flow problem.</caption>
   <tr>
     <th>Dimensionless</th>
     <th>Definition</th>
@@ -112,7 +111,7 @@ Finally, as it was assumed for the incompresssible flow problem, upper and lower
 For the chemical scalar transport, there are three dimensionless numbers characterising the problem. Péclet number corresponds to the ratio between advection and diffusion fluxes; meanwhile both Damkhöler numbers are defined as ratios between attachment/detachment and diffusion fluxes.
 
 <table>
-  <caption style="text-align:right">Dimensionless numbers for incompressible flow problem.</caption>
+  <caption style="text-align:right">Dimensionless numbers for scalar transport problem.</caption>
   <tr>
     <th>Dimensionless</th>
     <th>Definition</th>
@@ -136,10 +135,6 @@ For the chemical scalar transport, there are three dimensionless numbers charact
 </table>
 <br>
 
-<figure>
-  <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
-  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
-</figure>
 
 ### Meshing and solution schemes
 
