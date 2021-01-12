@@ -19,7 +19,7 @@ In order to address transport and retention dynamic of passive scalars in porous
 
 #### Incompressible flow
 
-In the first hand, Navier-Stokes set of equations are used to model the fluid flow through the porous medium. For a 2D problem, this is formed by 3 equations: one for fluid continuity and two for fluid momentum balance (one per dimension). By these equations, pressure and velocity distributions can be estimated for the spatial domain.
+In the first hand, Navier-Stokes set of equations are used to model the fluid flow through the porous medium. By this approach, steady flow is considered, so the transient term is neglected. For a 2D problem, this is formed by 3 equations: one for fluid continuity and two for fluid momentum balance (one per dimension). By these equations, pressure and velocity distributions can be estimated for the spatial domain.
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large {\frac{\partial u_x}{\partial x}}%2B{\frac{\partial u_y}{\partial y}}=0">
 
@@ -27,23 +27,34 @@ In the first hand, Navier-Stokes set of equations are used to model the fluid fl
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large u_x \frac{\partial u_y}{\partial x}%2B u_y \frac{\partial u_y}{\partial y}-\nu \left( \frac{\partial^2 u_y}{\partial x^2}%2B \frac{\partial^2 u_y}{\partial y^2} \right) %2B \frac{1}{\rho} \frac{\partial P}{\partial y}=0">
 
-In order to delimite the mathematical problem regaring incompressible flow, initial and boundary conditions are proposed based on the problem statement. As an initial condition, zero velocity and a constant pressure are considered.
+In order to delimite the mathematical problem regarding incompressible flow, initial and boundary conditions are proposed based on the problem statement. As an initial condition, zero velocity and a constant pressure are considered.
 
-<img src="https://render.githubusercontent.com/render/math?math=\Large u_x=0, u_y=0, P=P_{out}">
+<img src="https://render.githubusercontent.com/render/math?math=\Large u_x (t=0)=0, u_y (t=0)=0, P (t=0)=P_{out}">
 
-At the inlet boundary, constant velocity and pressure zero grandient are considered. Although, at the outlet 
+At the inlet boundary, constant velocity and pressure zero grandient are considered.
 
-<img src="https://render.githubusercontent.com/render/math?math=\Large \frac{\partial P}{\partial x}=0, u_x=u_{in}, u_y=0">
-<img src="https://render.githubusercontent.com/render/math?math=\Large P=P_{out}, \frac{\partial u_x}{\partial x}=0, \frac{\partial u_y}{\partial x}=0">
-<img src="https://render.githubusercontent.com/render/math?math=\Large \frac{\partial P}{\partial x}=0, u_x=0, u_y=0">
+<img src="https://render.githubusercontent.com/render/math?math=\Large \frac{\partial P}{\partial x} |_{\small \textrm{inlet}}=0, u_x|_{\small \textrm{inlet}}=u_{in}, u_y|_{\small \textrm{inlet}}=0">
+
+Although, at the outlet boundary, constant pressure and velocity zero gradient, corresponding to an outlow-type condition. 
+
+<img src="https://render.githubusercontent.com/render/math?math=\Large P|_{\small \textrm{outlet}}=P_{out}, \frac{\partial u_x}{\partial x}|_{\small \textrm{outlet}}=0, \frac{\partial u_y}{\partial x}|_{\small \textrm{outlet}}=0">
+
+For the grains boundary, a non-slip condition is considered. In this, 
+
+<img src="https://render.githubusercontent.com/render/math?math=\Large \frac{\partial P}{\partial x}|_{\small \textrm{grain}}=0, u_x|_{\small \textrm{grain}}=0, u_y|_{\small \textrm{grain}}=0">
+
+Finally, for the top and bottom boundary, a symetry 
 
 #### Chemical scalar transport
-On the other hand, chemical scalar transport are modelled by the non-stationary Advection-Diffusion (ADR) equation.
+On the other hand, chemical scalar transport are modelled by the unsteady Advection-Diffusion (ADR) equation. By this equation, and with a predefined velocity field, the concentration field can be computed.
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large \frac{\partial c}{\partial t}-\left(u_x \frac{\partial c}{\partial x} %2B u_y \frac{\partial c}{\partial x} \right) %2B D \left( \frac{\partial^2 c}{\partial x^2} %2B \frac{\partial^2 c}{\partial y^2}\right)=0">
 
 As boundary conditions. 
 This condition corresponds to the Langmuir-type retention model, which is widely used in these applications.
+
+<img src="https://render.githubusercontent.com/render/math?math=\Large c(t=0)=c_{in}">
+
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large c=c_{in}">
 <img src="https://render.githubusercontent.com/render/math?math=\Large \frac{\partial c}{\partial x}=0">
