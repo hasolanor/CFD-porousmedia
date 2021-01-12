@@ -64,11 +64,11 @@ Following the same steps for the problem delimitation, a constant concentration 
 
 As a boundary condition at inlet, a constant concentration is assumed:
 
-<img src="https://render.githubusercontent.com/render/math?math=\Large c=c_{in}">
+<img src="https://render.githubusercontent.com/render/math?math=\Large c|_{\small \textrm{inlet}}=c_{in}">
 
 Althought, a zero concentration gradient at the outlet is considered:
 
-<img src="https://render.githubusercontent.com/render/math?math=\Large \frac{\partial c}{\partial x}=0">
+<img src="https://render.githubusercontent.com/render/math?math=\Large \frac{\partial c}{\partial x}|_{\small \textrm{outlet}}=0">
 
 For the grains boundary, a model for retention is used to represent the surface phenomena. **Bueno et. al. (2020)** propose an schema based on an Langmuir-type retention model, in which attachment onto the surface depends on the chemical scalar concentration in the fluid and the retained concentration. So, this boundary condition can be expressed as follow:
 
