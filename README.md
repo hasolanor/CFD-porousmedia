@@ -31,7 +31,7 @@ In order to delimite the mathematical problem regarding incompressible flow, ini
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large u_x (t=0)=0, u_y (t=0)=0, P (t=0)=P_{out}">
 
-At the inlet boundary, constant velocity and pressure zero grandient are considered.
+Regarding the boundary conditions, constant velocity and pressure zero grandient are considered as inlet boundary conditions.
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large \frac{\partial P}{\partial x} |_{\small \textrm{inlet}}=0, u_x|_{\small \textrm{inlet}}=u_{in}, u_y|_{\small \textrm{inlet}}=0">
 
@@ -39,25 +39,31 @@ Although, at the outlet boundary, constant pressure and velocity zero gradient, 
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large P|_{\small \textrm{outlet}}=P_{out}, \frac{\partial u_x}{\partial x}|_{\small \textrm{outlet}}=0, \frac{\partial u_y}{\partial x}|_{\small \textrm{outlet}}=0">
 
-For the grains boundary, a non-slip condition is considered. In this, 
+For the grains boundary, a non-slip condition is considered. In this condition, fluid velocity and pressure gradient are set as zero. 
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large \frac{\partial P}{\partial x}|_{\small \textrm{grain}}=0, u_x|_{\small \textrm{grain}}=0, u_y|_{\small \textrm{grain}}=0">
 
-Finally, for the top and bottom boundary, a symetry 
+Finally, 
 
 #### Chemical scalar transport
 On the other hand, chemical scalar transport are modelled by the unsteady Advection-Diffusion (ADR) equation. By this equation, and with a predefined velocity field, the concentration field can be computed.
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large \frac{\partial c}{\partial t}-\left(u_x \frac{\partial c}{\partial x} %2B u_y \frac{\partial c}{\partial x} \right) %2B D \left( \frac{\partial^2 c}{\partial x^2} %2B \frac{\partial^2 c}{\partial y^2}\right)=0">
 
-As boundary conditions. 
-This condition corresponds to the Langmuir-type retention model, which is widely used in these applications.
+Following the same steps for the problem delimitation, a constant concentration field is considered as an initial condition of this problem.
 
-<img src="https://render.githubusercontent.com/render/math?math=\Large c(t=0)=c_{in}">
+<img src="https://render.githubusercontent.com/render/math?math=\Large c(t=0)=c_0">
 
+As a boundary condition at inlet, a constant concentration is assumed.
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large c=c_{in}">
+
+Althought, a zero concentration gradient at the outlet is considered.
+
 <img src="https://render.githubusercontent.com/render/math?math=\Large \frac{\partial c}{\partial x}=0">
+
+For the grains boundary, a model for retention is used to represent the surface phenomena. Bueno et. al. (2020) propose an schema based on an Langmuir-type retention model, in which attachment onto the surface depends on the chemical scalar concentration in the fluid and the retained concentration. So, in this boundary, the transport term is equal to a 
+
 <img src="https://render.githubusercontent.com/render/math?math=\Large -D\left( \frac{\partial^2 c}{\partial x^2} %2B \frac{\partial^2 c}{\partial y^2}\right) = K_a \left( 1-\frac{s}{s_{max}} \right)c - K_d s">
 
 ### Dimensionless variables
