@@ -24,8 +24,12 @@ Some assumptions are listed below:
   <li>Milk</li>
 </ul>
 
+<figure>
+  <img src="geometry.jpeg" alt="Trulli" style="width:50%">
+  <figcaption>Fig.1 - 2D Geometry used in this CFD study.</figcaption>
+</figure>
 
-![plot](./geometry.jegp)
+
 
 
 ### Mathematical Formulation and Dimensionless Variables
