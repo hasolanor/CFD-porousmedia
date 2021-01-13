@@ -1,4 +1,4 @@
-# Transport and retention of chemical scalars in porous media: a 2D CFD-based study at the pore-scale
+# Transport and retention of chemical scalars in porous media: a 2D CFD study at the pore-scale
 Hillmert A. Solano, Faculty of Mines, Universidad Nacional de Colombia
 ## Presentation (video)
 
@@ -14,7 +14,7 @@ This study is addressed under a CFD approach, enabling to evaluate transport and
 
 ### Problem Statement
 
-Aiming to simplify the problem, but keeping in mind the objectives of this study, a 2D geometry is generated. This geometry contains a regular porous medium in the middle formed by circular grains as shown in Figure 1. A fluid with a dispersed chemical scalar is injected into the domain and follow some transport dynamics. On the first hand, the chemical scalars trend to be transported by the fluid velocity. This mechanism corresponds to *advection*. In addition, concentration gradients in the medium lead to a scalar transport towards the regions with less concentration by *molecular diffusion*.
+Aiming to simplify the problem, but keeping in mind the objectives of this study, a 2D geometry is generated. This geometry contains a regular porous medium in the middle formed by circular grains as shown in Figure 1. A fluid with a dispersed chemical scalar is injected into the domain at the inlet port, follows some transport dynamics, and exits at the outlet port. Inside the porous medium, the chemical scalars trend to be transported by the fluid flow. This mechanism corresponds to *advection*. In addition, concentration gradients in the medium lead to a scalar transport towards the regions with less concentration by *molecular diffusion*.
 
 Transversaly, when the chemical scalars reach the porous medium, surface-level interactions generate a mass scalar flux from or towards the rock surface. The rate and the direction of this flux depends on the solid surface composition, chemical nature of the specie, chemical and dynamic properties of the carrier fluids, and concentrations in the fluid and retained onto the surface.
 
@@ -27,7 +27,7 @@ Transversaly, when the chemical scalars reach the porous medium, surface-level i
 Some assumptions are listed below:
 
 <ul>
-  <li>The carrier fluid behaves as a Newtonian fluid (i.e. viscosity is not a function of shear rate).</li> 
+  <li>The carrier fluid behaves as a Newtonian fluid (i.e. viscosity is not a function of the shear rate).</li> 
   <li>The concentration of the chemical scalar does not affect fluid viscosity.</li>
   <li>There is no energy transport mechanism affecting the mass and momentum transports.</li>
 </ul>
@@ -62,7 +62,7 @@ For the grains boundary, a non-slip condition is considered. In this condition, 
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large \frac{\partial P}{\partial x}|_{\small \textrm{grain}}=0, u_x|_{\small \textrm{grain}}=0, u_y|_{\small \textrm{grain}}=0">
 
-Finally, upper and lower boundaries are considered as planes of symmetry. So, pressure, velocity, and their corresponding gradients are equal at the same distance from the planes.
+Finally, upper and lower boundaries are considered as axes of symmetry. So, pressure, velocity, and their corresponding gradients are equal at the same distance from the planes.
 
 Based on this mathematical model, two dimensionless numbers govern incompressible flow in the porous medium. Reybolds number is the ratio between intertial and viscous forces; meanwhile Ruark number corresponds to the ratio betweeen inertial and pressure forces.
 
@@ -107,7 +107,7 @@ For the grains boundary, a model for retention is used to represent the surface 
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large -D\left( \frac{\partial^2 c}{\partial x^2} %2B \frac{\partial^2 c}{\partial y^2}\right) |_{\small \textrm{grain}} = K_a \left( 1-\frac{s}{s_{max}} \right)c - K_d s">
 
-Finally, as it was assumed for the incompresssible flow problem, upper and lower boundaries are considered as planes of symmetry for concentration too.
+Finally, as it was assumed for the incompresssible flow problem, upper and lower boundaries are considered as axes of symmetry for concentration too.
 
 For the chemical scalar transport, there are three dimensionless numbers characterising the problem. Péclet number corresponds to the ratio between advection and diffusion fluxes; meanwhile both Damkhöler numbers are defined as ratios between attachment/detachment and diffusion fluxes.
 
@@ -138,6 +138,33 @@ For the chemical scalar transport, there are three dimensionless numbers charact
 
 
 ### Meshing and solution schemes
+
+To solve numerically the problem, a quad-based mesh is generated using the ANSYS ICEM CFD software, as shown in Figure 2. 
+
+<figure>
+  <img src="quad-mesh.jpeg" alt="geometry" style="width: 10px">
+  <figcaption>Fig.2- 2D Geometry used in this CFD study. All dimensions are in meters.</figcaption>
+</figure>
+
+
+<table>
+  <caption style="text-align:right">Dimensionless numbers for scalar transport problem.</caption>
+  <tr>
+    <th>Dimensions of grid</th>
+    <th>Number of points</th>
+    <th>Number of cells</th>
+    <th>Number of faces</th>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>245 093</td>
+    <td>238 806</td>
+    <td>483 957</td>
+  </tr>
+</table>
+<br>
+
+
 
 ### Experimental Design
 
