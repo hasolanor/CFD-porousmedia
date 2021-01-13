@@ -139,7 +139,7 @@ For the chemical scalar transport, there are three dimensionless numbers charact
 
 ### Meshing and solution schemes
 
-To solve numerically the problem, a quad-based mesh is generated using the ANSYS ICEM CFD software, as shown in Figure 2. 
+To solve numerically the problem, a quad-based mesh is generated using the ANSYS ICEM CFD software, as shown in Figure 2. This mesh is refined in the most conflictive regions to guarantee a proper set of mesh quality indicators. 
 
 <figure>
   <img src="quad-mesh.jpeg" alt="geometry" style="width: 10px">
@@ -147,8 +147,10 @@ To solve numerically the problem, a quad-based mesh is generated using the ANSYS
 </figure>
 
 
+Table 3 shows the features of the generated mesh.
+
 <table>
-  <caption style="text-align:right">Dimensionless numbers for scalar transport problem.</caption>
+  <caption style="text-align:right">Table 3. Mesh features.</caption>
   <tr>
     <th>Dimensions of grid</th>
     <th>Number of points</th>
@@ -164,10 +166,22 @@ To solve numerically the problem, a quad-based mesh is generated using the ANSYS
 </table>
 <br>
 
-
+Both problems, the incompressible flow and scalar transport ones, are solved using OpenFOAM, a widely recognised open source package for CFD applications. The mathematical model is discretised by the Finite Volume Method (FVM). In particular, the incompressible flow problem is solved using the simpleFoam solver, which follows the SIMPLE algorithm to estimate the velocity and pressure fields in the spatial domain. Meanwhile, the in-house version of the scalarTransportFoam solver, developed by the Multiscale Modelling and Heterogeneous Media group of the University of Nottingham, is used to solve the chemical scalar transport problem (**Bueno et. al. 2020**). This version includes the Langmuir-based kinetic to model the chemical scalar retention onto the rock surface.
 
 ### Experimental Design
 
+<table>
+  <caption style="text-align:right">Table 3. Mesh features.</caption>
+  <tr>
+    <th>Reynolds Number</th>
+    <th>Nuarkk Number</th>
+  </tr>
+  <tr>
+    <td>1e-3</td>
+    <td>1e-3</td>
+  </tr>
+</table>
+<br>
 
 
 
