@@ -14,22 +14,23 @@ This study is addressed under a CFD approach, enabling to evaluate transport and
 
 ### Problem Statement
 
-Aiming to simplify this study, a 2D regular porous media is generated.
+Aiming to simplify the problem, but keeping in mind the objectives of this study, a 2D geometry is generated. This geometry contains a regular porous medium in the middle formed by circular grains as shown in Figure 1. A fluid with a dispersed chemical scalar is injected into the domain and follow some transport dynamics. On the first hand, the chemical scalars trend to be transported by the fluid velocity. This mechanism corresponds to *advection*. In addition, concentration gradients in the medium lead to a scalar transport towards the regions with less concentration by *molecular diffusion*.
+
+Transversaly, when the chemical scalars reach the porous medium, surface-level interactions generate a mass scalar flux from or towards the rock surface. The rate and the direction of this flux depends on the solid surface composition, chemical nature of the specie, chemical and dynamic properties of the carrier fluids, and concentrations in the fluid and retained onto the surface.
+
+<figure>
+  <img src="geometry.jpeg" alt="geometry" style="width: 10px">
+  <img src="boundaries.jpeg" alt="geometry" style="width: 10px">
+  <figcaption>Fig.1 - 2D Geometry used in this CFD study. All dimensions are in meters.</figcaption>
+</figure>
 
 Some assumptions are listed below:
 
 <ul>
+  <li>The carrier fluid behaves as a Newtonian fluid (i.e. viscosity is not a function of shear rate).</li> 
   <li>The concentration of the chemical scalar does not affect fluid viscosity.</li>
-  <li>Tea</li>
-  <li>Milk</li>
+  <li>There is no energy transport mechanism affecting the mass and momentum transports.</li>
 </ul>
-
-<figure>
-  <img src="geometry.jpeg" alt="geometry" style="width: 100px">
-  <img src="boundaries.jpeg" alt="geometry" style="width: 100px">
-  <figcaption>Fig.1 - 2D Geometry used in this CFD study. All dimensions are in meters.</figcaption>
-</figure>
-
 
 ### Mathematical Formulation and Dimensionless Variables
 
@@ -37,7 +38,7 @@ As mentioned above, the transport of a scalar depends strongly on fluid flow in 
 
 #### Incompressible flow
 
-In the first hand, the Navier-Stokes set of equations are used to model the fluid flow through the porous medium. By this approach, steady flow is considered, so the transient term is neglected. For a 2D problem, this is formed by 3 equations: one for fluid continuity and two for fluid momentum balance (one per dimension). By these equations, pressure and velocity distributions can be estimated for the spatial domain.
+The widely known Navier-Stokes equations are used to model the fluid flow through the porous medium. By this approach, steady flow is considered, so the transient term is neglected. For a 2D problem, this is formed by 3 equations: one for fluid continuity and two for fluid momentum balance (one per dimension). By these equations, pressure and velocity distributions can be estimated for the spatial domain.
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large {\frac{\partial u_x}{\partial x}}%2B{\frac{\partial u_y}{\partial y}}=0">
 
@@ -66,7 +67,7 @@ Finally, upper and lower boundaries are considered as planes of symmetry. So, pr
 Based on this mathematical model, two dimensionless numbers govern incompressible flow in the porous medium. Reybolds number is the ratio between intertial and viscous forces; meanwhile Ruark number corresponds to the ratio betweeen inertial and pressure forces.
 
 <table>
-  <caption style="text-align:right">Dimensionless numbers for incompressible flow problem.</caption>
+  <caption style="text-align:right">Tab 1. Dimensionless numbers for incompressible flow problem.</caption>
   <tr>
     <th>Dimensionless</th>
     <th>Definition</th>
@@ -137,6 +138,8 @@ For the chemical scalar transport, there are three dimensionless numbers charact
 
 
 ### Meshing and solution schemes
+
+### Experimental Design
 
 
 
