@@ -19,8 +19,8 @@ Aiming to simplify the problem, but keeping in mind the objectives of this study
 Transversaly, when the chemical scalars reach the porous medium, surface-level interactions generate a mass scalar flux from or towards the rock surface. The rate and the direction of this flux depends on the solid surface composition, chemical nature of the specie, chemical and dynamic properties of the carrier fluids, and concentrations in the fluid and retained onto the surface.
 
 <figure>
-  <img src="geometry.jpeg" alt="geometry" style="width: 10px">
-  <img src="boundaries.jpeg" alt="geometry" style="width: 10px">
+  <img src="./Figures/General/geometry.jpeg" alt="geometry" style="width: 10px">
+  <img src="./Figures/General/boundaries.jpeg" alt="geometry" style="width: 10px">
   <figcaption>Fig.1 - 2D Geometry used in this CFD study. All dimensions are in meters.</figcaption>
 </figure>
 
