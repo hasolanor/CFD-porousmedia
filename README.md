@@ -142,7 +142,7 @@ For the chemical scalar transport, there are three dimensionless numbers charact
 To solve numerically the problem, a quad-based mesh is generated using the ANSYS ICEM CFD software, as shown in Figure 2. This mesh is refined in the most conflictive regions to guarantee a proper set of mesh quality indicators. 
 
 <figure>
-  <img src="quad-mesh.jpeg" alt="geometry" style="width: 10px">
+  <img src="./Figures/General/quadmesh.jpeg" alt="geometry" style="width: 10px">
   <figcaption>Fig.2- 2D Geometry used in this CFD study. All dimensions are in meters.</figcaption>
 </figure>
 
