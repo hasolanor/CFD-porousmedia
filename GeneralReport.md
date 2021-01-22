@@ -9,6 +9,8 @@ The injection of taylored solutions with chemical scalars, such as polymers, sur
 
 When a chemical scalar is injected into a porous medium, it follows some transport and retention dynamics by the interactions among other scalar particles/molecules (aggregation and disaggregation), the carrier fluid (transport phenomena), and the solid surface (surface phenomena), which govern its deployment. Hence, the understanding of the transport and retention dynamics allows to evaluate chemical species behaviour inside the porous medium, and therefore determine the most favourables conditions targeting better outcomes.
 
+In this work, under a CFD-based framework, 
+
 ## 2. Methodology
 This study is addressed under a CFD approach, enabling to evaluate transport and retention phenomena at the pore-scale considering a continuous medium in the pore space. The followed methodology is presented below:
 
