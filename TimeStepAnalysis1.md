@@ -1,6 +1,6 @@
 # Appendix: Evaluation of the timestep independence regarding chemical scalar transport and retention problem
 
-In order to choose a proper timestep in the proposed CFD simulations, a previous evaluation of time step independence is carried out. Keeping this in mind, 
+In order to select a proper timestep in the proposed CFD simulations, a previous evaluation of time step independence is carried out. Keeping this in mind, the proposed numerical experiment framework is run until 300 s for several timesteps. Then, the results are post-processed and a concentration profile over a horizontal axis (parallel to x-axis) is obtained for each considered timestep.
 
 <table style="width:100%">
   <tr>
@@ -40,8 +40,15 @@ In order to choose a proper timestep in the proposed CFD simulations, a previous
   </tr>
 </table>
 
-<img src=".Figures/ScalarTransport/dtsensibility.png" alt="Girl in a jacket">
+<figure>
+  <img src="./Figures/ScalarTranport/dtsensibility.png" alt="sensibility" style="width: 10px">
+  <figcaption>Figure. Concentration profile over a horizontal axis at y=0.0007m.</figcaption>
+</figure>
 
+<figure>
+  <img src="./Figures/ScalarTranport/dtsensibilityresiduals.png" alt="sensibility2" style="width: 10px">
+  <figcaption>Figure. Concentration profile over a horizontal axis at y=0.0007m.</figcaption>
+</figure>
 
 
 
