@@ -40,7 +40,7 @@ In order to choose a proper timestep in the proposed CFD simulations, a previous
   </tr>
 </table>
 
-<img src=".Figures/ScalarTransport/dt sensibility.jpeg" alt="Girl in a jacket" style="width:500px;height:600px;">
+<img src=".Figures/ScalarTransport/dtsensibility.png" alt="Girl in a jacket">
 
 
 
