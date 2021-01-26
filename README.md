@@ -187,7 +187,17 @@ Both problems, the incompressible flow and scalar transport ones, are solved usi
 
 
 
-## 3. Results
+## 3. Results and Discussion
+
+### Transport Problem
+
+#### Effect of the size of the chemical scalar on the transport dynamics
+
+### Effect of the size of the chemical scalar on the retention capacity
+
+### Effect of the attachment rate
+
+### Effect of the detachment rate
 
 ## 4. Conclusions
 
