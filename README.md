@@ -29,7 +29,8 @@ Transversaly, when the chemical scalars reach the porous medium, surface-level i
 Some assumptions are listed below:
 
 <ul>
-  <li>The carrier fluid behaves as a Newtonian fluid (i.e. viscosity is not a function of the shear rate).</li>   
+  <li>The carrier fluid behaves as a Newtonian fluid (i.e. viscosity is not a function of the shear rate).</li>  
+  <li>Flow regime is laminar (low Reynolds numbers).</li>
   <li>The concentration of the chemical scalar does not affect fluid viscosity (low concentration).</li>
   <li>The concentration of the chemical scalar does not affect diffusivity (Fickian mass transport).</li>
   <li>Diffusion coefficient is constant for all points in the space and all directions.</li>
@@ -229,7 +230,6 @@ The numerical solution schemes are presented below in Table 3.
 
 
 #### Scalar Transport
-
 
 Meanwhile, the in-house version of the scalarTransportFoam solver, developed by the Multiscale Modelling and Heterogeneous Media group of the University of Nottingham, is used to solve the chemical scalar transport problem (**Bueno et. al. 2020**). This version includes the Langmuir-based kinetic to model the chemical scalar retention onto the rock surface.
 
