@@ -294,8 +294,7 @@ Regarding the incompressible flow problem, one experiment is proposed considerin
 
 
 <figure>
-  <img src="./Figures/Incompressible%20Flow/velocityfield.jpeg" alt="geometry" height="500px"/>
-    <img src="./Figures/Incompressible%20Flow/velocityfieldzoomed.jpeg" alt="geometry" height="500px"/>
+  <img src="./Figures/Incompressible%20Flow/velocityfield.jpeg" alt="geometry" height="250px"> <img src="./Figures/Incompressible%20Flow/velocityfieldzoomed.jpeg" alt="geometry" height="250px">
   <figcaption>Fig.3- Velocity fields obtained from the incompressible flow problem. Left: whole image, right: zoomed.</figcaption>
 </figure>
 
@@ -313,15 +312,15 @@ Regarding the incompressible flow problem, one experiment is proposed considerin
 
 Taking into account that reactions are neglected and Reynold number is low; the approximation proposed by Stokes-Einstein can be used to estimate the mass diffusion coefficient. 
 
-<img src="https://render.githubusercontent.com/render/math?math=\Large D = \frac{k_b T}{3 \pi \nu \rho_s d_s }">
+<img src="https://render.githubusercontent.com/render/math?math=\Large D = \frac{k_b T}{3 \pi \nu \rho d_s }">
 
-where <img src="https://render.githubusercontent.com/render/math?math=\normalsize k_b"> is the Boltzman constant (1.38e-23 J/K), <img src="https://render.githubusercontent.com/render/math?math=\normalsize d_s"> is the diameter of the specie, and <img src="https://render.githubusercontent.com/render/math?math=\normalsize \rho_s"> is the specie density.
+where <img src="https://render.githubusercontent.com/render/math?math=\normalsize k_b"> is the Boltzman constant (1.38e-23 J/K) and <img src="https://render.githubusercontent.com/render/math?math=\normalsize d_s"> is the diameter of the specie.
 
 On the other hand, to estimate the retention capacity of the porous medium, the next equation is proposed based on a surface occupancy.
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large s_{max} = \frac{\pi}{6}  a_s \rho_s d_s ">
 
-where <img src="https://render.githubusercontent.com/render/math?math=\normalsize d_s"> is the diameter of the specie and <img src="https://render.githubusercontent.com/render/math?math=\normalsize a_s"> is the surface area to porous volume ratio
+where <img src="https://render.githubusercontent.com/render/math?math=\normalsize d_s"> is the diameter of the specie, <img src="https://render.githubusercontent.com/render/math?math=\normalsize a_s"> is the surface area to porous volume ratio, and <img src="https://render.githubusercontent.com/render/math?math=\normalsize \rho_s"> is the specie density.
 
 
 where <img src="https://render.githubusercontent.com/render/math?math=\normalsize k_b"> is the Boltzman constant (1.38e-23 J/K), <img src="https://render.githubusercontent.com/render/math?math=\normalsize d_s"> is the diameter of the specie, <img src="https://render.githubusercontent.com/render/math?math=\normalsize a_s"> is the surface area to porous volume ratio, and <img src="https://render.githubusercontent.com/render/math?math=\normalsize \rho_s"> is the specie density.
