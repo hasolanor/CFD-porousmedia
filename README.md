@@ -266,7 +266,7 @@ The numerical solution schemes for this problem are presented below in Table 4.
 </table>
 <br>
 
-## Experiments and Results
+## 3. Experiments and Results
 
 ### Incompressible flow
 
@@ -292,10 +292,15 @@ Regarding the incompressible flow problem, one experiment is proposed considerin
 <br>
 
 
+
 <figure>
-  <img src=".Figures/Incompressible%20Flow/velocityfield.jpeg" alt="geometry" style="width: 10px">
-  <figcaption>Fig.3- Velocity fields obtained from the incompressible flow problem.</figcaption>
+  <img src="./Figures/Incompressible%20Flow/velocityfield.jpeg" alt="geometry" height="500px"/>
+    <img src="./Figures/Incompressible%20Flow/velocityfieldzoomed.jpeg" alt="geometry" height="500px"/>
+  <figcaption>Fig.3- Velocity fields obtained from the incompressible flow problem. Left: whole image, right: zoomed.</figcaption>
 </figure>
+
+
+
 
 
 
