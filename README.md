@@ -12,7 +12,7 @@ One of the most important issues involved in the behaviour of chemica scalars in
 This work is focused on the phenomenological study of transport dynamics followed by chemical scalars in porous media. In order to address this objective, a CFD framework-based study is carried out. Firstly, the methodology is presented, including the problem statement, the mathematical formulation and the main variables leading to the transport dynamics, meshing and solution schemes, and the description of the numerical experiments run in this work. Subsequently, the obtained results are discussed assessing the impact of the chemical scalars features on the transport behaviour. Finally, some conclusions are presented. Furthermore, some annexes with more detailed information regarding the CFD approach are referenced.
 
 ## 2. Methodology
-Under a CFD approach, this study follows a phenomenological methodology (see **Bear (2018)**) that is presented below.
+Under a CFD approach, this study follows a phenomenological methodology (**Bear, 2018**) that is presented below.
 
 ### Problem Statement
 
@@ -189,11 +189,13 @@ A mesh independence assessment is presented in the Annex 1.
 
 ### Solution schemes
 
+Both problems, the incompressible flow and scalar transport ones, are solved using OpenFOAM, a widely recognised open source package for CFD applications with a Finite Volume-based framework.
+
 #### Incompressible Flow
 
-Both problems, the incompressible flow and scalar transport ones, are solved using OpenFOAM, a widely recognised open source package for CFD applications with a Finite Volume-based framework. In particular, the incompressible flow problem is solved using the simpleFoam solver, which follows the Semi-Implicit Method for Pressure Linked Equations (SIMPLE) algorithm to estimate the velocity and pressure fields in the spatial domain. This algorithm shows a better performance with respect to the other ones available in OpenFOAM at the conditions of the experiments. The above is concluded from a convergence study presented in the Annex 2. 
+The incompressible flow problem is solved using the simpleFoam solver, which follows the Semi-Implicit Method for Pressure Linked Equations (SIMPLE) algorithm to estimate the velocity and pressure fields in the spatial domain. This algorithm shows a better performance with respect to the other ones available in OpenFOAM at the conditions of the experiments. The above is concluded from a convergence study presented in the Annex 2. 
 
-The numerical solution schemes are presented below in Table 3.
+The numerical solution schemes for this problem are presented below in Table 3.
 
 <table>
   <caption style="text-align:right">Table 3. Numerical solution features for the incompressible flow problem.</caption>
@@ -231,19 +233,170 @@ The numerical solution schemes are presented below in Table 3.
 
 #### Scalar Transport
 
-Meanwhile, the in-house version of the scalarTransportFoam solver, developed by the Multiscale Modelling and Heterogeneous Media group of the University of Nottingham, is used to solve the chemical scalar transport problem (**Bueno et. al. 2020**). This version includes the Langmuir-based kinetic to model the chemical scalar retention onto the rock surface.
+Meanwhile, the in-house version of the scalarTransportFoam solver, developed by the Multiscale Modelling and Heterogeneous Media group of the University of Nottingham, is used to solve the chemical scalar transport problem (**Bueno et. al. 2020**). This version includes the Langmuir-based kinetic to model the chemical scalar retention onto the rock surface. A more detailed information regarding the implementation of this computational model can be found in Bueno et. al. (2020).
+
+The numerical solution schemes for this problem are presented below in Table 4.
+
+<table>
+  <caption style="text-align:right">Table 4. Numerical solution features for the scalar transport problem.</caption>
+  <tr>
+    <th>Feature</th>
+    <th>Scheme</th>
+  </tr>
+  <tr>
+    <td>Transient term Scheme</td>
+    <td>Euler</td>
+  </tr>  
+  <tr>
+    <td>Gradient Scheme</td>
+    <td>Gauss linear</td>
+  </tr>  
+  <tr>
+    <td>Divergence Scheme</td>
+    <td>Bounded Gauss Linear Upwind for velocity gradient</td>
+  </tr>  
+  <tr>
+    <td>Laplacian Scheme</td>
+    <td>Gauss linear corrected</td>
+  </tr>
+  <tr>
+    <td>Linear solver</td>
+    <td>PBiCGStab with DILU precondicioner</td>
+  </tr>
+</table>
+<br>
 
 ### Experimental Design
 
+#### Incompressible flow
+
 <table>
-  <caption style="text-align:right">Table 3. Mesh features.</caption>
+  <caption style="text-align:right">Table 5. Input data used for the incompressible flow simulation.</caption>
   <tr>
-    <th>Reynolds Number</th>
-    <th>Nuarkk Number</th>
+    <th><img src="https://render.githubusercontent.com/render/math?math=\normalsize u_{in}"> (m/s) </th>
+    <th><img src="https://render.githubusercontent.com/render/math?math=\normalsize P_{out}"> (Pa) </th>
+    <th><img src="https://render.githubusercontent.com/render/math?math=\normalsize \nu"> (<img src="https://render.githubusercontent.com/render/math?math=\normalsize m^2/s">)</th>
+    <th><img src="https://render.githubusercontent.com/render/math?math=\normalsize \rho"> (<img src="https://render.githubusercontent.com/render/math?math=\normalsize kg/m^3">)</th>
+    <th><img src="https://render.githubusercontent.com/render/math?math=\normalsize N_{Re}"> </th>
+    <th><img src="https://render.githubusercontent.com/render/math?math=\normalsize N_{Ru}"> </th>
+</tr>
+  <tr>
+    <td>3.53e-06</td>
+    <td>0.00e+00</td>
+    <td>1.00e-06 </td>
+    <td>1.00e+03 </td>
+  </tr>
+</table>
+<br>
+
+
+#### Scalar Transport
+
+
+Taking into account that reactions are neglected and Reynold number is low; the approximation proposed by Stokes-Einstein can be used to estimate the mass diffusion coefficient. 
+
+<img src="https://render.githubusercontent.com/render/math?math=\Large D = \frac{k_b T}{3 \pi \mu d_s }">
+
+where <img src="https://render.githubusercontent.com/render/math?math=\normalsize k_b"> is the Boltzman constant (1.38e-23 J/K) and <img src="https://render.githubusercontent.com/render/math?math=\normalsize d_s"> is the diameter of the specie.
+
+On the other hand, to estimate the retention capacity of the porous medium, the next equation is proposed based on a surface occupancy.
+
+<img src="https://render.githubusercontent.com/render/math?math=\Large s_{max} = \frac{\pi}{6}  a_s \rho_s d_s ">
+
+where <img src="https://render.githubusercontent.com/render/math?math=\normalsize d_s"> is the diameter of the specie, <img src="https://render.githubusercontent.com/render/math?math=\normalsize a_s"> is the surface area to porous volume ratio, and <img src="https://render.githubusercontent.com/render/math?math=\normalsize \rho_s"> is the specie density.
+
+
+where <img src="https://render.githubusercontent.com/render/math?math=\normalsize k_b"> is the Boltzman constant (1.38e-23 J/K), <img src="https://render.githubusercontent.com/render/math?math=\normalsize d_s"> is the diameter of the specie, <img src="https://render.githubusercontent.com/render/math?math=\normalsize a_s"> is the surface area to porous volume ratio, and <img src="https://render.githubusercontent.com/render/math?math=\normalsize \rho_s"> is the specie density.
+
+<table>
+  <caption style="text-align:right">Table 6. Input data used for the numerical experiments.</caption>
+  <tr>
+    <th>ID</th>
+    <th>Diameter (nm) </th>
+    <th><img src="https://render.githubusercontent.com/render/math?math=\large k_a"> (1/s) </th>
+    <th><img src="https://render.githubusercontent.com/render/math?math=\large k_d"> (1/s)</th>
+    <th>D (<img src="https://render.githubusercontent.com/render/math?math=\normalsize m^2/s">) </th>
+    <th><img src="https://render.githubusercontent.com/render/math?math=\large s_{max}"> (<img src="https://render.githubusercontent.com/render/math?math=\normalsize kg/m^3">)</th>
+    <th><img src="https://render.githubusercontent.com/render/math?math=\Large N_{Pe}"> </th>
+    <th><img src="https://render.githubusercontent.com/render/math?math=\Large N_{Da,a}"> </th>
+    <th><img src="https://render.githubusercontent.com/render/math?math=\Large N_{Da,d}"> </th>
+</tr>
+  <tr>
+    <td> 1</td>
+    <td>- </td>
+    <td>0.00e+00 </td>
+    <td>0.00e+00 </td>
+    <td>0.00e+00 </td>
+    <td>- </td>
+    <td>- </td>
+    <td>0.00e+00 </td>
+    <td>0.00e+00 </td>
   </tr>
   <tr>
-    <td>1e-3</td>
-    <td>1e-3</td>
+    <td> 2</td>
+    <td>10 </td>
+    <td>0.00e+00 </td>
+    <td>0.00e+00 </td>
+    <td>4.32e-11 </td>
+    <td>3.67e-01 </td>
+    <td>20.53 </td>
+    <td>0.00e+00 </td>
+    <td>0.00e+00 </td>
+  </tr>
+  <tr>
+    <td> 3</td>
+    <td> 50</td>
+    <td>0.00e+00 </td>
+    <td>0.00e+00 </td>
+    <td>8.64e-12 </td>
+    <td>1.83e+00 </td>
+    <td>102.65 </td>
+    <td>0.00e+00 </td>
+    <td>0.00e+00 </td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>100</td>
+    <td>0.00e+00 </td>
+    <td>0.00e+00 </td>
+    <td>4.32e-12 </td>
+    <td>3.67e+00 </td>
+    <td>205.30 </td>
+    <td>0.00e+00 </td>
+    <td>0.00e+00 </td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>10</td>
+    <td>1.00e-07 </td>
+    <td>0.00e+00 </td>
+    <td>4.32e-11 </td>
+    <td>3.67e-01 </td>
+    <td>20.53 </td>
+    <td>1.46e-04 </td>
+    <td>0.00e+00 </td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>50</td>
+    <td>1.00e-07 </td>
+    <td>0.00e+00 </td>
+    <td>8.64e-12 </td>
+    <td>1.83e+00 </td>
+    <td>102.65 </td>
+    <td>7.31e-04 </td>
+    <td>0.00e+00 </td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>100</td>
+    <td>1.00e-07 </td>
+    <td>0.00e+00 </td>
+    <td>4.32e-12 </td>
+    <td>3.67e+00 </td>
+    <td>205.30 </td>
+    <td>1.46e-03 </td>
+    <td>0.00e+00 </td>
   </tr>
 </table>
 <br>
