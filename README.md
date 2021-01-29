@@ -270,7 +270,7 @@ The numerical solution schemes for this problem are presented below in Table 4.
 
 ### Incompressible flow
 
-Regarding the incompressible flow problem, one experiment is proposed considering the input data shown in Table 5. Its results are used as input in the scalar transport experiments in order to evaluate the transport dynamics of the chemical scalar. The Annex 3 contains a validation of the incompressible flow model, where the Darcy's law is checked for the outcomes.
+Regarding the incompressible flow problem, one experiment is proposed considering the input data shown in Table 5. Its results are used as input in the scalar transport experiments in order to evaluate the transport dynamics of the chemical scalar. The Annex 3 contains a validation of the incompressible flow model.
 
 <table>
   <caption style="text-align:right">Table 5. Input data used for the incompressible flow simulation.</caption>
@@ -289,12 +289,16 @@ Regarding the incompressible flow problem, one experiment is proposed considerin
     <td>1.00e+03 </td>
   </tr>
 </table>
-<br>
 
 
 
 <figure>
-  <img src="./Figures/Incompressible%20Flow/velocityfield.jpeg" alt="geometry" height="250px"> <img src="./Figures/Incompressible%20Flow/velocityfieldzoomed.jpeg" alt="geometry" height="250px">
+  <table border="0">
+  <tr>
+    <th><img src="./Figures/Incompressible%20Flow/velocityfield.jpeg" alt="geometry" height="300px"> </th>
+    <th><img src="./Figures/Incompressible%20Flow/velocityfieldzoomed.jpeg" alt="geometry" height="300px"></th>
+</tr>
+</table>
   <figcaption>Fig.3- Velocity fields obtained from the incompressible flow problem. Left: whole image, right: zoomed.</figcaption>
 </figure>
 
