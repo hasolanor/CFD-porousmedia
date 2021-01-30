@@ -303,6 +303,16 @@ Regarding the incompressible flow problem, one experiment is proposed considerin
 </figure>
 
 
+<figure>
+  <table border="0">
+  <tr>
+    <th><img src="./Figures/Incompressible%20Flow/pressurefield.jpeg" alt="geometry" height="300px"> </th>
+</tr>
+</table>
+  <figcaption>Fig.3- Velocity fields obtained from the incompressible flow problem. Left: whole image, right: zoomed.</figcaption>
+</figure>
+
+
 
 
 
