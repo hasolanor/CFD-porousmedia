@@ -299,7 +299,7 @@ Regarding the incompressible flow problem, one experiment is proposed considerin
     <th><img src="./Figures/Incompressible%20Flow/velocityfieldzoomed.jpeg" alt="geometry" height="300px"></th>
 </tr>
 </table>
-  <figcaption>Fig.3- Velocity fields obtained from the incompressible flow problem. Left: whole image, right: zoomed.</figcaption>
+  <figcaption>Fig.3- Velocity field obtained from the incompressible flow simulation. Left: whole image, right: zoomed. In the pictures, some streamlines are plotted. </figcaption>
 </figure>
 
 
@@ -309,9 +309,18 @@ Regarding the incompressible flow problem, one experiment is proposed considerin
     <th><img src="./Figures/Incompressible%20Flow/pressurefield.jpeg" alt="geometry" height="300px"> </th>
 </tr>
 </table>
-  <figcaption>Fig.3- Velocity fields obtained from the incompressible flow problem. Left: whole image, right: zoomed.</figcaption>
+  <figcaption>Fig.4- Pressure field obtained from the incompressible flow simulation.</figcaption>
 </figure>
 
+<figure>
+  <table border="0">
+  <tr>
+    <th><img src="./Figures/Incompressible%20Flow/velocitywallshearstress.jpeg" alt="geometry" height="300px"> </th>
+    <th><img src="./Figures/Incompressible%20Flow/velocitywallshearstresszoomed.jpeg" alt="geometry" height="300px"></th>
+</tr>
+</table>
+  <figcaption>Fig.5-  Wall shear stress obtained from the incompressible flow simulation. Left: whole image, right: zoomed.</figcaption>
+</figure>
 
 
 
