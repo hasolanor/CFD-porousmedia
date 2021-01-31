@@ -1,5 +1,5 @@
 # Chemical scalars transport in porous media: a 2D CFD study at the pore-scale
-Hillmert A. Solano, Faculty of Mines, Universidad Nacional de Colombia
+Hillmert A. Solano
 ## Presentation (video)
 
 
@@ -290,17 +290,7 @@ Regarding the incompressible flow problem, one experiment is proposed considerin
   </tr>
 </table>
 
-
-
-<figure>
-  <table border="0">
-  <tr>
-    <th><img src="./Figures/Incompressible%20Flow/velocityfield.jpeg" alt="geometry" height="300px"> </th>
-    <th><img src="./Figures/Incompressible%20Flow/velocityfieldzoomed.jpeg" alt="geometry" height="300px"></th>
-</tr>
-</table>
-  <figcaption>Fig.3- Velocity field obtained from the incompressible flow simulation. Left: whole image, right: zoomed. In the pictures, some streamlines are plotted. </figcaption>
-</figure>
+From this CFD simulation, velocity and pressure fields are obtained. Figure 3 shows the pressure colormap obtained by simulation. This plot shows that pressure gradient between the inlet port and the outlet port is caused mainly by the flow dynamics in the porous media, which is expected according to the 
 
 
 <figure>
@@ -309,8 +299,23 @@ Regarding the incompressible flow problem, one experiment is proposed considerin
     <th><img src="./Figures/Incompressible%20Flow/pressurefield.jpeg" alt="geometry" height="300px"> </th>
 </tr>
 </table>
-  <figcaption>Fig.4- Pressure field obtained from the incompressible flow simulation.</figcaption>
+  <figcaption>Fig.3- Pressure field obtained from the incompressible flow simulation.</figcaption>
 </figure>
+
+Figure 4 shows the velocity magnitude colormap with a set of streamlines obtained by postprocessing. As shown in the plot, there is a gradient of velocity magnitude in the pore throats located in the flow direction (from inlet to outlet ports). This is caused by the momentum transfer mechanism, in which, the 
+
+<figure>
+  <table border="0">
+  <tr>
+    <th><img src="./Figures/Incompressible%20Flow/velocityfield.jpeg" alt="geometry" height="300px"> </th>
+    <th><img src="./Figures/Incompressible%20Flow/velocityfieldzoomed.jpeg" alt="geometry" height="300px"></th>
+</tr>
+</table>
+  <figcaption>Fig.4- Velocity field obtained from the incompressible flow simulation. Left: whole image, right: zoomed. In the pictures, some streamlines are plotted. </figcaption>
+</figure>
+
+On the 
+
 
 <figure>
   <table border="0">
