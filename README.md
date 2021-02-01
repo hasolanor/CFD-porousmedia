@@ -1,4 +1,4 @@
-# Chemical species transport in porous media: a 2D CFD study at the pore-scale
+# Transport Dynamics of Chemical Species in Porous Media: a 2D CFD study at the pore-scale
 Hillmert A. Solano
 ## Presentation (video)
 
@@ -245,7 +245,7 @@ The numerical solution schemes for this problem are presented below in Table 3.
 
 #### Scalar Transport
 
-Meanwhile, the in-house version of the scalarTransportFoam solver, developed by the Multiscale Modelling and Heterogeneous Media group of the University of Nottingham, is used to solve the chemical scalar transport problem (**Bueno et. al. 2020**). This version includes the Langmuir-based kinetic to model the chemical scalar retention onto the rock surface. A more detailed information regarding the implementation of this computational model can be found in Bueno et. al. (2020).
+The chemical specie transport problem is solved using the scalarTransportFoam solver. Particularly, the adaptation developed by the the ***Multiscale Modelling and Heterogeneous Media group*** of the University of Nottingham is used because it includes a proper boundary condition represention for the retention dynamics onto solid surfaces based on Langmuir kinetic and others (**Bueno et. al. 2020**). **Bueno et. al. 2020** shows a more detailed information respect to the implementation of this computational model.
 
 The numerical solution schemes for this problem are presented below in Table 4.
 
@@ -282,7 +282,7 @@ The numerical solution schemes for this problem are presented below in Table 4.
 
 ### Incompressible flow
 
-One numerical experiment is carried out considering the input data shown in Table 5 for the incompressible flow problem. Its results are used as input in the scalar transport experiments in order to evaluate the transport dynamics of the chemical scalar. 
+The incompressible flow simulation is run using the input data presented in Table 5. Its results are used as input in the scalar transport experiments in order to evaluate the transport dynamics of the chemical scalar. 
 
 <table>
   <caption style="text-align:right">Table 5. Input data used for the incompressible flow simulation.</caption>
@@ -340,7 +340,8 @@ Furthermore, the plotted streamlines show a preferential trend in following the 
   <figcaption>Fig.5-  Cartesian plots of velocity vs. distance along two different axes. Left: x=0.0009m (vertical), right: y=0.0007 (horizontal).</figcaption>
 </figure>
 
-Considering the above discussion, the outcomes obtained from the incompressible flow simulation are consistents and can be applied to run the scalar transport simulations.
+
+From the above, the outcomes obtained from the incompressible flow simulation are consistents and can be applied to run the scalar transport simulations.
 
 ### Scalar Transport
 
@@ -367,8 +368,8 @@ In order to address this study, a set of seven numerical experiment was run. The
     <td>- </td>
     <td>- </td>
     <td>0.00e+00 </td>
-    <td><p><a href="https://www.youtube.com/watch?v=UbzHim_1x0U">Video</a>.</p> </td>
-    <td><p><a href="https://www.youtube.com/watch?v=TBKmxifALT0">Video</a>.</p> </td>
+    <td><p><a href="https://www.youtube.com/watch?v=UbzHim_1x0U">Video</a></p> </td>
+    <td><p><a href="https://www.youtube.com/watch?v=TBKmxifALT0">Video</a></p> </td>
   </tr>
   <tr>
     <td> 2</td>
@@ -378,8 +379,8 @@ In order to address this study, a set of seven numerical experiment was run. The
     <td>3.67e-01 </td>
     <td>20.53 </td>
     <td>0.00e+00 </td>
-    <td><p><a href="https://www.youtube.com/watch?v=tC7wnuEwXq8">Video</a>.</p> </td>
-    <td><p><a href="https://www.youtube.com/watch?v=EtOTb5CJTCc">Video</a>.</p> </td>
+    <td><p><a href="https://www.youtube.com/watch?v=tC7wnuEwXq8">Video</a></p> </td>
+    <td><p><a href="https://www.youtube.com/watch?v=EtOTb5CJTCc">Video</a></p> </td>
   </tr>
   <tr>
     <td> 3</td>
@@ -389,8 +390,8 @@ In order to address this study, a set of seven numerical experiment was run. The
     <td>1.83e+00 </td>
     <td>102.65 </td>
     <td>0.00e+00 </td>
-    <td><p><a href="https://www.youtube.com/watch?v=xm6KSwjxmQY">Video</a>.</p> </td>
-    <td><p><a href="https://www.youtube.com/watch?v=TTHVxNuWjdI">Video</a>.</p> </td>
+    <td><p><a href="https://www.youtube.com/watch?v=xm6KSwjxmQY">Video</a></p> </td>
+    <td><p><a href="https://www.youtube.com/watch?v=TTHVxNuWjdI">Video</a></p> </td>
   </tr>
   <tr>
     <td>4</td>
@@ -400,8 +401,8 @@ In order to address this study, a set of seven numerical experiment was run. The
     <td>3.67e+00 </td>
     <td>205.30 </td>
     <td>0.00e+00 </td>
-    <td><p><a href="https://www.youtube.com/watch?v=PmyAC1zPRU8">Video</a>.</p> </td>
-    <td><p><a href="https://www.youtube.com/watch?v=EVIjJY_LxTg">Video</a>.</p> </td>
+    <td><p><a href="https://www.youtube.com/watch?v=PmyAC1zPRU8">Video</a></p> </td>
+    <td><p><a href="https://www.youtube.com/watch?v=EVIjJY_LxTg">Video</a></p> </td>
   </tr>
   <tr>
     <td>5</td>
@@ -411,8 +412,8 @@ In order to address this study, a set of seven numerical experiment was run. The
     <td>3.67e-01 </td>
     <td>20.53 </td>
     <td>1.46e-04 </td>
-    <td><p><a href="https://www.youtube.com/watch?v=KaFeWjrQV3U">Video</a>.</p> </td>
-    <td><p><a href="https://www.youtube.com/watch?v=vnQHHuDpRXo">Video</a>.</p> </td>
+    <td><p><a href="https://www.youtube.com/watch?v=KaFeWjrQV3U">Video</a></p> </td>
+    <td><p><a href="https://www.youtube.com/watch?v=vnQHHuDpRXo">Video</a></p> </td>
   </tr>
   <tr>
     <td>6</td>
@@ -422,8 +423,8 @@ In order to address this study, a set of seven numerical experiment was run. The
     <td>1.83e+00 </td>
     <td>102.65 </td>
     <td>7.31e-04 </td>
-    <td><p><a href="https://www.youtube.com/watch?v=9jOkrxBxqAg">Video</a>.</p> </td>
-    <td><p><a href="https://www.youtube.com/watch?v=jwDzBNLhNRY">Video</a>.</p> </td>
+    <td><p><a href="https://www.youtube.com/watch?v=9jOkrxBxqAg">Video</a></p> </td>
+    <td><p><a href="https://www.youtube.com/watch?v=jwDzBNLhNRY">Video</a></p> </td>
   </tr>
   <tr>
     <td>7</td>
@@ -433,8 +434,8 @@ In order to address this study, a set of seven numerical experiment was run. The
     <td>3.67e+00 </td>
     <td>205.30 </td>
     <td>1.46e-03 </td>
-    <td><p><a href="https://www.youtube.com/watch?v=g_SVaWlDfDA">Video</a>.</p> </td>
-    <td><p><a href="https://www.youtube.com/watch?v=rdLdOiCMbxo">Video</a>.</p> </td>
+    <td><p><a href="https://www.youtube.com/watch?v=g_SVaWlDfDA">Video</a></p> </td>
+    <td><p><a href="https://www.youtube.com/watch?v=rdLdOiCMbxo">Video</a></p> </td>
   </tr>
 </table>
 <br>
