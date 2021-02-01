@@ -449,7 +449,35 @@ The next schedule is simulate for all of the proposed experiments:
   
 A time-step of 6s has been chosen for all simulations. Annex 4 presents a time-step independence analysis that concludes that this value is proper to this type of simulation.
 
-#### Considering Diffusive Transport
+### Effect of the diffusion on the chemical specie transport
+
+<figure>
+  <table border="0">
+  <tr>
+    <th><img src="./Experiments/Experiment1/animationzoom_experiment1_CDF-porousmedia_8min.jpg" alt="geometry" height="250px"> </th>
+    <th><img src="./Experiments/Experiment1/animationzoom_experiment1_CDF-porousmedia_20min.jpg" alt="geometry" height="250px"> </th>
+    <th><img src="./Experiments/Experiment1/animationzoom_experiment1_CDF-porousmedia_28min.jpg" alt="geometry" height="250px"> </th>
+</tr>
+  <tr>
+    <th>Experiment 1. 480 min. </th>
+    <th>Experiment 1. 1200 min. </th>
+    <th>Experiment 1. 1680 min. </th>
+</tr>
+<tr>
+    <th><img src="./Experiments/Experiment3/animationzoom_experiment3_CDF-porousmedia_8min.jpg" alt="geometry" height="250px"> </th>
+    <th><img src="./Experiments/Experiment3/animationzoom_experiment3_CDF-porousmedia_12min.jpg" alt="geometry" height="250px"> </th>
+    <th><img src="./Experiments/Experiment3/animationzoom_experiment3_CDF-porousmedia_28min.jpg" alt="geometry" height="250px"> </th>
+</tr>
+  <tr>
+    <th>Experiment 3. 480 min. </th>
+    <th>Experiment 3. 1200 min. </th>
+    <th>Experiment 3. 1680 min. </th>
+</tr>
+
+</table>
+  <figcaption>Fig.5-  Cartesian plots of velocity vs. distance along two different axes. Left: x=0.0009m (vertical), right: y=0.0007 (horizontal).</figcaption>
+</figure>
+
 
 ### Effect of the size of the chemical scalar without retention
 
