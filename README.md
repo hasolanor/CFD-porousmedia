@@ -486,23 +486,30 @@ In the upper plots, corresponding to the non-diffusion case, species trends to b
 
 This comparison shows the importance of the mass diffusion on transport in porous media, which affects the species deployment at the pore scale. However, it is necessary to evaluate if this issue has an important effect on the outcomes according to the specific operation.
 
-### Effect of the size of the chemical species
+### Effect of the size of the chemical species in transport (without retention)
 
+<figure>
+    <th><img src="./Figures/ScalarTranport/breakthrough-nonretention.png" alt="geometry" height="500px"> </th>
+  <figcaption>Fig.7-  Screenshot obtained from simulation corresponding to Experiment 1 (upper) and Experiment 3 (lower). For each experiment, the screeshots correspond to 480 s (left), 1200 s (centre), and 1680 s (right). </figcaption>
+  <br> <br>
+</figure>
+
+
+### Effect of the size of the chemical species in transport (with retention)
 
 
 <figure>
-    <th><img src="./Experiments/Experiment3/animationzoom_experiment3_CDF-porousmedia_12min.jpg" alt="geometry" height="250px"> </th>
-  <figcaption>Fig.6-  Screenshot obtained from simulation corresponding to Experiment 1 (upper) and Experiment 3 (lower). For each experiment, the screeshots correspond to 480 s (left), 1200 s (centre), and 1680 s (right). </figcaption>
+    <th><img src="./Figures/ScalarTranport/breakthrough-retention-diameter.png" alt="geometry" height="500px"> </th>
+  <figcaption>Fig.8-  Screenshot obtained from simulation corresponding to Experiment 1 (upper) and Experiment 3 (lower). For each experiment, the screeshots correspond to 480 s (left), 1200 s (centre), and 1680 s (right). </figcaption>
   <br> <br>
 </figure>
 
 
 
 
-
 ### Effect of the retention in the transport
 
-Aiming to evaluate the effect of the retention on transport dynamics, Figure 8 shows the evolution of concentration profile along the axis y=0.0007m (horizontal) for Experiment 3 (without retention) and Experiment 4 (with retention) for a species with size of 50nm.
+Aiming to evaluate the effect of the retention on transport dynamics, Figure 9 shows the evolution of concentration profile along the axis y=0.0007m (horizontal) for Experiment 3 (without retention) and Experiment 4 (with retention) for a species with size of 50nm.
 
 <figure>
     <table border="0">
@@ -515,7 +522,7 @@ Aiming to evaluate the effect of the retention on transport dynamics, Figure 8 s
     <th>With retention. </th>
 </tr>
       </table>
-  <figcaption>Fig.8-  Comparison between cases without and with retention for a species size of 50 nm. Each plot shows the evolution of the concentration profile along the horizontal axis at y=0.0007m. </figcaption>
+  <figcaption>Fig.9-  Comparison between cases without and with retention for a species size of 50 nm. Each plot shows the evolution of the concentration profile along the horizontal axis at y=0.0007m. </figcaption>
   <br> <br>
 </figure>
 
