@@ -445,7 +445,7 @@ The next schedule is simulate for all of the proposed experiments:
 <ul>
   <li> Injection of a fluid with a dispersed concentration of <img src="https://render.githubusercontent.com/render/math?math=\normalsize 1 kg/m^3"> - dispersed between 0s to 1200s.
   <li> Injection of a fluid with a dispersed concentration of <img src="https://render.githubusercontent.com/render/math?math=\normalsize 0 kg/m^3"> between 1200s to 2400s.
-<\ul>
+</ul>
   
 A time-step of 6s has been chosen for all simulations. Annex 4 presents a time-step independence analysis that concludes that this value is proper to this type of simulation.
 
