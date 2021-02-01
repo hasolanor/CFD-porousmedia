@@ -456,25 +456,11 @@ In order to address this study, a set of seven numerical experiment was run. The
 <br>
 
 
-### Transport Problem
+#### Considering Diffusive Transport
 
-<figure class="large">
-    <div class="myvideo">
-       <video  style="display:block; width:100%; height:auto;" autoplay controls loop="loop">
-           <source src="./Experiments/Experiment1/animation-zoom.ogv" type="video/ogg" />
-       </video>
-    </div>
-<figcaption>A nice movie format</figcaption>
-</figure>
+### Effect of the size of the chemical scalar without retention
 
-
-#### Effect of the size of the chemical scalar on the transport dynamics
-
-### Effect of the size of the chemical scalar on the retention capacity
-
-### Effect of the attachment rate
-
-### Effect of the detachment rate
+### Effect of the size of the chemical scalar without retention
 
 ## 4. Conclusions
 
