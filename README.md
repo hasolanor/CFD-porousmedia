@@ -477,7 +477,8 @@ Figure 6 presents a set of screenshots obtained from the simulation video zoomed
     <th>Experiment 3. 1680 s. </th>
 </tr>
 </table>
-  <figcaption>Fig.6-  Screenshot obtained from simulation corresponding to Experiment 1 (upper) and Experiment 3 (lower). For each experiment, the screeshots correspond to 480 s (left), 1200 s (centre), and 1680 s (right).</figcaption>
+  <figcaption>Fig.6-  Screenshot obtained from simulation corresponding to Experiment 1 (upper) and Experiment 3 (lower). For each experiment, the screeshots correspond to 480 s (left), 1200 s (centre), and 1680 s (right). </figcaption>
+  <br> <br>
 </figure>
 
 
