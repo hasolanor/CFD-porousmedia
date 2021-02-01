@@ -315,8 +315,15 @@ On another vein, Figure 4 shows the velocity magnitude colormap with a set of st
   <figcaption>Fig.4- Velocity field obtained from the incompressible flow simulation. Left: whole image, right: zoomed. In the pictures, some streamlines are plotted. </figcaption>
 </figure>
 
-On the 
 
+<figure>
+  <table border="0">
+  <tr>
+    <th><img src=".//Figures/Incompressible%20Flow/velocitylong.jpeg" alt="geometry" height="500px"> </th>
+</tr>
+</table>
+  <figcaption>Fig.5-  Wall shear stress obtained from the incompressible flow simulation. Left: whole image, right: zoomed.</figcaption>
+</figure>
 
 <figure>
   <table border="0">
@@ -325,7 +332,7 @@ On the
     <th><img src="./Figures/Incompressible%20Flow/velocitywallshearstresszoomed.jpeg" alt="geometry" height="300px"></th>
 </tr>
 </table>
-  <figcaption>Fig.5-  Wall shear stress obtained from the incompressible flow simulation. Left: whole image, right: zoomed.</figcaption>
+  <figcaption>Fig.6-  Wall shear stress obtained from the incompressible flow simulation. Left: whole image, right: zoomed.</figcaption>
 </figure>
 
 
