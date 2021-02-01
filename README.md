@@ -5,7 +5,7 @@ Hillmert A. Solano
 
 
 ## 1. Introduction
-The injection of tailored solutions with chemical scalars; such as polymers, surfactants, nanoparticles, salts, and others;  has become very common in subsurface engineering applications. The Enhanced Oil Recovery (EOR) operations are a good example of these applications, in which chemical scalars use to be injected to generate or favour different interactions that improve oil and gas production. On another vein, the remotion of non-aqueous liquid phases (NAPL) and solid pollutants from soil and groundwater bodies can be improved using chemical scalars. Furthermore, recent studies show a positive impact on the carbon dioxide storage capacity when a Geological Carbon Sequestration (GCS) operation is upgraded by the use of chemical scalars. All above accounts for the importance of the study of chemical scalar behaviour in porous media targeting to improving its understanding and the design process of these operations.
+The injection of tailored solutions with chemical scalars; such as polymers, surfactants, nanoparticles, salts, and others;  has become very common in subsurface engineering applications. Enhanced Oil Recovery (EOR) operations are a good example of these applications, in which chemical scalars use to be injected to generate or favour different interactions that improve oil and gas production. On another vein, the remotion of non-aqueous liquid phases (NAPL) and solid pollutants from soil and groundwater bodies can be improved using chemical scalars. Furthermore, recent studies show a positive impact on the carbon dioxide storage capacity when a Geological Carbon Sequestration (GCS) operation is upgraded by the use of chemical scalars. All above accounts for the importance of the study of chemical scalar behaviour in porous media targeting to improving its understanding and the design process of these operations.
 
 One of the most important issues involved in the behaviour of chemica scalars in porous media are the transport phenomena. When a chemical scalar is injected into a porous medium, several transport mechanisms are followed. These mechanisms are strongly associated with its interactions with other scalar particles/molecules, the carrier fluid, and the solid surface; and govern its deployment inside the porous medium. With this in mind, a proper representation of the transport dynamics exhibed by the chemical scalars inside the porous media is key to design a subsurface engineering application involving chemical scalars.
 
@@ -270,7 +270,7 @@ The numerical solution schemes for this problem are presented below in Table 4.
 
 ### Incompressible flow
 
-Regarding the incompressible flow problem, one experiment is proposed considering the input data shown in Table 5. Its results are used as input in the scalar transport experiments in order to evaluate the transport dynamics of the chemical scalar. The Annex 3 contains a validation of the incompressible flow model.
+Regarding the incompressible flow problem, one experiment is proposed considering the input data shown in Table 5. Its results are used as input in the scalar transport experiments in order to evaluate the transport dynamics of the chemical scalar. 
 
 <table>
   <caption style="text-align:right">Table 5. Input data used for the incompressible flow simulation.</caption>
@@ -290,7 +290,7 @@ Regarding the incompressible flow problem, one experiment is proposed considerin
   </tr>
 </table>
 
-From this CFD simulation, velocity and pressure fields are obtained. Figure 3 shows the pressure colormap obtained by simulation. This plot shows that pressure gradient between the inlet port and the outlet port is caused mainly by the flow dynamics in the porous media, which is expected according to the 
+From this CFD simulation, velocity and pressure fields are obtained. Figure 3 shows the pressure colormap obtained by simulation. This plot shows that pressure gradient between the inlet port and the outlet port is caused mainly by the flow dynamics in the porous media, which is expected considering the Darcy's law. Based on this phenomenological law, a validation of the flow model is presented in the Annex 3.
 
 
 <figure>
@@ -302,7 +302,8 @@ From this CFD simulation, velocity and pressure fields are obtained. Figure 3 sh
   <figcaption>Fig.3- Pressure field obtained from the incompressible flow simulation.</figcaption>
 </figure>
 
-Figure 4 shows the velocity magnitude colormap with a set of streamlines obtained by postprocessing. As shown in the plot, there is a gradient of velocity magnitude in the pore throats located in the flow direction (from inlet to outlet ports). This is caused by the momentum transfer mechanism, in which, the 
+
+On another vein, Figure 4 shows the velocity magnitude colormap with a set of streamlines obtained by postprocessing. As shown in the plot, there is a local gradient of velocity magnitude in the pore throats parallels to the flow direction. This gradient can be explained considering momentum transfer between two no-slipping walls, in which the maximum velocity is reached at the middle of the pore throat and a zero-relative velocity at the walls. Furthermore, the plotted streamlines shows a preferencial trend in following the pressure gradient direction. 
 
 <figure>
   <table border="0">
