@@ -352,12 +352,10 @@ In order to address this study, a set of seven numerical experiment was run. The
     <th>ID</th>
     <th>Diameter (nm) </th>
     <th><img src="https://render.githubusercontent.com/render/math?math=\large k_a"> (1/s) </th>
-    <th><img src="https://render.githubusercontent.com/render/math?math=\large k_d"> (1/s)</th>
     <th>D (<img src="https://render.githubusercontent.com/render/math?math=\normalsize m^2/s">) </th>
     <th><img src="https://render.githubusercontent.com/render/math?math=\large s_{max}"> (<img src="https://render.githubusercontent.com/render/math?math=\normalsize kg/m^3">)</th>
     <th><img src="https://render.githubusercontent.com/render/math?math=\Large N_{Pe}"> </th>
     <th><img src="https://render.githubusercontent.com/render/math?math=\Large N_{Da,a}"> </th>
-    <th><img src="https://render.githubusercontent.com/render/math?math=\Large N_{Da,d}"> </th>
     <th>Animation </th>
     <th>Animation (zoomed) </th>
 </tr>
@@ -366,10 +364,8 @@ In order to address this study, a set of seven numerical experiment was run. The
     <td>- </td>
     <td>0.00e+00 </td>
     <td>0.00e+00 </td>
-    <td>0.00e+00 </td>
     <td>- </td>
     <td>- </td>
-    <td>0.00e+00 </td>
     <td>0.00e+00 </td>
     <td><p><a href="https://www.youtube.com/watch?v=UbzHim_1x0U">Video</a>.</p> </td>
     <td><p><a href="https://www.youtube.com/watch?v=TBKmxifALT0">Video</a>.</p> </td>
@@ -378,11 +374,9 @@ In order to address this study, a set of seven numerical experiment was run. The
     <td> 2</td>
     <td>10 </td>
     <td>0.00e+00 </td>
-    <td>0.00e+00 </td>
     <td>4.32e-11 </td>
     <td>3.67e-01 </td>
     <td>20.53 </td>
-    <td>0.00e+00 </td>
     <td>0.00e+00 </td>
     <td><p><a href="https://www.youtube.com/watch?v=tC7wnuEwXq8">Video</a>.</p> </td>
     <td><p><a href="https://www.youtube.com/watch?v=EtOTb5CJTCc">Video</a>.</p> </td>
@@ -391,11 +385,9 @@ In order to address this study, a set of seven numerical experiment was run. The
     <td> 3</td>
     <td> 50</td>
     <td>0.00e+00 </td>
-    <td>0.00e+00 </td>
     <td>8.64e-12 </td>
     <td>1.83e+00 </td>
     <td>102.65 </td>
-    <td>0.00e+00 </td>
     <td>0.00e+00 </td>
     <td><p><a href="https://www.youtube.com/watch?v=xm6KSwjxmQY">Video</a>.</p> </td>
     <td><p><a href="https://www.youtube.com/watch?v=TTHVxNuWjdI">Video</a>.</p> </td>
@@ -404,11 +396,9 @@ In order to address this study, a set of seven numerical experiment was run. The
     <td>4</td>
     <td>100</td>
     <td>0.00e+00 </td>
-    <td>0.00e+00 </td>
     <td>4.32e-12 </td>
     <td>3.67e+00 </td>
     <td>205.30 </td>
-    <td>0.00e+00 </td>
     <td>0.00e+00 </td>
     <td><p><a href="https://www.youtube.com/watch?v=PmyAC1zPRU8">Video</a>.</p> </td>
     <td><p><a href="https://www.youtube.com/watch?v=EVIjJY_LxTg">Video</a>.</p> </td>
@@ -417,12 +407,10 @@ In order to address this study, a set of seven numerical experiment was run. The
     <td>5</td>
     <td>10</td>
     <td>1.00e-07 </td>
-    <td>0.00e+00 </td>
     <td>4.32e-11 </td>
     <td>3.67e-01 </td>
     <td>20.53 </td>
     <td>1.46e-04 </td>
-    <td>0.00e+00 </td>
     <td><p><a href="https://www.youtube.com/watch?v=KaFeWjrQV3U">Video</a>.</p> </td>
     <td><p><a href="https://www.youtube.com/watch?v=vnQHHuDpRXo">Video</a>.</p> </td>
   </tr>
@@ -430,12 +418,10 @@ In order to address this study, a set of seven numerical experiment was run. The
     <td>6</td>
     <td>50</td>
     <td>1.00e-07 </td>
-    <td>0.00e+00 </td>
     <td>8.64e-12 </td>
     <td>1.83e+00 </td>
     <td>102.65 </td>
     <td>7.31e-04 </td>
-    <td>0.00e+00 </td>
     <td><p><a href="https://www.youtube.com/watch?v=9jOkrxBxqAg">Video</a>.</p> </td>
     <td><p><a href="https://www.youtube.com/watch?v=jwDzBNLhNRY">Video</a>.</p> </td>
   </tr>
@@ -443,12 +429,10 @@ In order to address this study, a set of seven numerical experiment was run. The
     <td>7</td>
     <td>100</td>
     <td>1.00e-07 </td>
-    <td>0.00e+00 </td>
     <td>4.32e-12 </td>
     <td>3.67e+00 </td>
     <td>205.30 </td>
     <td>1.46e-03 </td>
-    <td>0.00e+00 </td>
     <td><p><a href="https://www.youtube.com/watch?v=g_SVaWlDfDA">Video</a>.</p> </td>
     <td><p><a href="https://www.youtube.com/watch?v=rdLdOiCMbxo">Video</a>.</p> </td>
   </tr>
