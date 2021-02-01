@@ -340,10 +340,11 @@ Furthermore, the plotted streamlines show a preferential trend in following the 
   <figcaption>Fig.5-  Cartesian plots of velocity vs. distance along two different axes. Left: x=0.0009m (vertical), right: y=0.0007 (horizontal).</figcaption>
 </figure>
 
-
+Considering the above discussion, the outcomes obtained from the incompressible flow simulation are consistents and can be applied to run the scalar transport simulations.
 
 ### Scalar Transport
 
+In order to address this study, a set of seven numerical experiment was run. The corresponding dataset is presented in Table 6.
 
 <table>
   <caption style="text-align:right">Table 6. Input data used for the numerical experiments.</caption>
@@ -440,6 +441,16 @@ Furthermore, the plotted streamlines show a preferential trend in following the 
 
 
 ### Transport Problem
+
+<figure class="large">
+    <div class="myvideo">
+       <video  style="display:block; width:100%; height:auto;" autoplay controls loop="loop">
+           <source src="./Experiments/Experiment1/animation-zoom.ogv" type="video/ogg" />
+       </video>
+    </div>
+<figcaption>A nice movie format</figcaption>
+</figure>
+
 
 #### Effect of the size of the chemical scalar on the transport dynamics
 
