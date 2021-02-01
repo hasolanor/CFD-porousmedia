@@ -443,7 +443,7 @@ In order to address this study, a set of seven numerical experiments was run. Th
 The next schedule is simulate for all of the proposed experiments:
 
 <ul>
-  <li> Injection of a fluid with a dispersed concentration of <img src="https://render.githubusercontent.com/render/math?math=\normalsize 1 kg/m^3"> - dispersed between 0s to 1200s.
+  <li> Injection of a fluid with a dispersed concentration of <img src="https://render.githubusercontent.com/render/math?math=\normalsize 1 kg/m^3"> between 0s to 1200s.
   <li> Injection of a fluid with a dispersed concentration of <img src="https://render.githubusercontent.com/render/math?math=\normalsize 0 kg/m^3"> between 1200s to 2400s.
 </ul>
   
