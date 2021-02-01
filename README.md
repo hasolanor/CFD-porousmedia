@@ -482,12 +482,25 @@ Figure 6 presents a set of screenshots obtained from the simulation video zoomed
   <br> <br>
 </figure>
 
-
 In the upper plots, corresponding to the non-diffusion case, species trends to be transported across the high streamlines’ density zones. Then, when these regions reach a species concentration equal to the injection one, the species begins to be transported toward low streamlines’ density zones reaching concentration greater than the injection ones. This particularity is associated with the low transport potential in these regions caused by the low flow potential, generating species cumulation. In contrast, when diffusion is considered, the maximum concentration reached in the whole porous space corresponds to the injection one.  The presence of the mass diffusion mechanisms enables species transport towards the low streamlines’ density regions and avoids a cumulation in these regions. 
 
 This comparison shows the importance of the mass diffusion on transport in porous media, which affects the species deployment at the pore scale. However, it is necessary to evaluate if this issue has an important effect on the outcomes according to the specific operation.
 
-### Effect of the size of the chemical scalar without retention
+### Effect of the size of the chemical species
+
+
+
+<figure>
+    <th><img src="./Experiments/Experiment3/animationzoom_experiment3_CDF-porousmedia_12min.jpg" alt="geometry" height="250px"> </th>
+  <figcaption>Fig.6-  Screenshot obtained from simulation corresponding to Experiment 1 (upper) and Experiment 3 (lower). For each experiment, the screeshots correspond to 480 s (left), 1200 s (centre), and 1680 s (right). </figcaption>
+  <br> <br>
+</figure>
+
+
+
+
+
+### Effect of the retention in the transport
 
 Aiming to evaluate the effect of the retention on transport dynamics, Figure 8 shows the evolution of concentration profile along the axis y=0.0007m (horizontal) for Experiment 3 (without retention) and Experiment 4 (with retention) for a species with size of 50nm.
 
