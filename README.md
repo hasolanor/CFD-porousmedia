@@ -451,6 +451,9 @@ A time-step of 6s has been chosen for all simulations. Annex 4 presents a time-s
 
 ### Effect of the diffusion on the chemical specie transport
 
+Figure 6 presents a set of screenshots obtained from the simulation video zoomed to pore scale for Experiments 1 and 3. These screenshots are obtained at t=480 s (during the dispersion injection), t=1200 s (when the dispersion injection stops), and t=1680 s (during fresh fluid injection) for both cases. 
+
+
 <figure>
   <table border="0">
   <tr>
@@ -459,9 +462,9 @@ A time-step of 6s has been chosen for all simulations. Annex 4 presents a time-s
     <th><img src="./Experiments/Experiment1/animationzoom_experiment1_CDF-porousmedia_28min.jpg" alt="geometry" height="250px"> </th>
 </tr>
   <tr>
-    <th>Experiment 1. 480 min. </th>
-    <th>Experiment 1. 1200 min. </th>
-    <th>Experiment 1. 1680 min. </th>
+    <th>Experiment 1. 480 s. </th>
+    <th>Experiment 1. 1200 s. </th>
+    <th>Experiment 1. 1680 s. </th>
 </tr>
 <tr>
     <th><img src="./Experiments/Experiment3/animationzoom_experiment3_CDF-porousmedia_8min.jpg" alt="geometry" height="250px"> </th>
@@ -469,15 +472,18 @@ A time-step of 6s has been chosen for all simulations. Annex 4 presents a time-s
     <th><img src="./Experiments/Experiment3/animationzoom_experiment3_CDF-porousmedia_28min.jpg" alt="geometry" height="250px"> </th>
 </tr>
   <tr>
-    <th>Experiment 3. 480 min. </th>
-    <th>Experiment 3. 1200 min. </th>
-    <th>Experiment 3. 1680 min. </th>
+    <th>Experiment 3. 480 s. </th>
+    <th>Experiment 3. 1200 s. </th>
+    <th>Experiment 3. 1680 s. </th>
 </tr>
-
 </table>
-  <figcaption>Fig.5-  Cartesian plots of velocity vs. distance along two different axes. Left: x=0.0009m (vertical), right: y=0.0007 (horizontal).</figcaption>
+  <figcaption>Fig.6-  Screenshot obtained from simulation corresponding to Experiment 1 (upper) and Experiment 3 (lower). For each experiment, the screeshots correspond to 480 s (left), 1200 s (centre), and 1680 s (right).</figcaption>
 </figure>
 
+
+In the upper plots, corresponding to the non-diffusion case, species trends to be transported across the high streamlines’ density zones. Then, when these regions reach a species concentration equal to the injection one, the species begins to be transported toward low streamlines’ density zones reaching concentration greater than the injection ones. This particularity is associated with the low transport potential in these regions caused by the low flow potential, generating species cumulation. In contrast, when diffusion is considered, the maximum concentration reached in the whole porous space corresponds to the injection one.  The presence of the mass diffusion mechanisms enables species transport towards the low streamlines’ density regions and avoids a cumulation in these regions. 
+
+This comparison shows the importance of the mass diffusion on transport in porous media, which affects the species deployment at the pore scale. However, it is necessary to evaluate if this issue has an important effect on the outcomes according to the specific operation.
 
 ### Effect of the size of the chemical scalar without retention
 
