@@ -290,7 +290,7 @@ Regarding the incompressible flow problem, one experiment is proposed considerin
   </tr>
 </table>
 
-From this CFD simulation, velocity and pressure fields are obtained. Figure 3 shows the pressure colormap obtained by simulation. This plot shows that pressure gradient between the inlet port and the outlet port is caused mainly by the flow dynamics in the porous media, which is expected considering the Darcy's law. Based on this phenomenological law, a validation of the flow model is presented in the Annex 3.
+From this CFD simulation, velocity and pressure fields are obtained. Figure 3 shows the pressure heatmap obtained by simulation. This plot shows that pressure gradient between the inlet port and the outlet port is caused mainly by the flow dynamics in the porous media, which is expected considering the Darcy's law. Based on this phenomenological law, a validation of the flow model is presented in the Annex 3.
 
 
 <figure>
@@ -303,7 +303,9 @@ From this CFD simulation, velocity and pressure fields are obtained. Figure 3 sh
 </figure>
 
 
-On another vein, Figure 4 shows the velocity magnitude colormap with a set of streamlines obtained by postprocessing. As shown in the plot, there is a local gradient of velocity magnitude in the pore throats parallels to the flow direction. This gradient can be explained considering momentum transfer between two no-slipping walls, in which the maximum velocity is reached at the middle of the pore throat and a zero-relative velocity at the walls. Furthermore, the plotted streamlines shows a preferencial trend in following the pressure gradient direction. 
+On another vein, Figure 4 shows the velocity magnitude heatmap with a set of streamlines obtained by postprocessing; while Figure 5 presents a cartesian plot of the velocity magnitude along a vertical axis located at x=0.0009m (a vertical axis at the middle of the spatial domain). Both figures shows that there are local gradients of velocity magnitude in the pore throats. These gradients can be explained by momentum transfers due to viscous forces between two no-slipping walls in each throat, in which the maximum velocity is reached at the middle of the pore throat and a zero-relative velocity at the walls. 
+
+Furthermore, the plotted streamlines show a preferential trend in following the direction of the pressure gradient. Comparing with the velocity heatmap, it can be concluded that the higher velocity magnitudes correspond to the zones with greater streamlines densities. For this reason, high-velocity zones lead to preferential flow paths in the porous medium.
 
 <figure>
   <table border="0">
@@ -319,10 +321,11 @@ On another vein, Figure 4 shows the velocity magnitude colormap with a set of st
 <figure>
   <table border="0">
   <tr>
+    <th><img src=".//Figures/Incompressible%20Flow/velocitytransversal.jpeg" alt="geometry" height="500px"> </th>
     <th><img src=".//Figures/Incompressible%20Flow/velocitylong.jpeg" alt="geometry" height="500px"> </th>
 </tr>
 </table>
-  <figcaption>Fig.5-  Wall shear stress obtained from the incompressible flow simulation. Left: whole image, right: zoomed.</figcaption>
+  <figcaption>Fig.5-  Cartesian plots of velocity vs. distance along two different axes. Left: x=0.0009m (vertical), right: y=0.0007 (horizontal).</figcaption>
 </figure>
 
 <figure>
