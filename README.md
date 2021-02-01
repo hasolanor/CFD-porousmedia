@@ -24,6 +24,7 @@ Transversaly, when the chemical scalars reach the porous medium, surface-level i
   <img src="./Figures/General/geometry.jpeg" alt="geometry" style="width: 10px">
   <img src="./Figures/General/boundaries.jpeg" alt="geometry" style="width: 10px">
   <figcaption>Fig.1 - 2D Geometry used in this CFD study. All dimensions are in meters.</figcaption>
+  <br><br>
 </figure>
 
 Some assumptions are listed below:
@@ -178,7 +179,7 @@ To solve numerically the problem, a quad-based mesh is generated using the **ANS
   <img src="./Figures/General/quadmesh.jpeg" alt="geometry" style="width: 10px">
   <figcaption>Fig.2- 2D Geometry used in this CFD study. All dimensions are in meters.</figcaption>
 </figure>
-
+<br><br>
 
 <table>
   <caption style="text-align:right">Table 3. Mesh features.</caption>
@@ -311,7 +312,7 @@ From this CFD simulation, velocity and pressure fields are obtained. Figure 3 sh
     <th><img src="./Figures/Incompressible%20Flow/pressurefield.jpeg" alt="geometry" height="300px"> </th>
 </tr>
 </table>
-  <figcaption>Fig.3- Pressure field obtained from the incompressible flow simulation.</figcaption>
+  <figcaption>Fig.3- Pressure field obtained from the incompressible flow simulation.</figcaption> <br><br>
 </figure>
 
 
@@ -326,7 +327,7 @@ Furthermore, the plotted streamlines show a preferential trend in following the 
     <th><img src="./Figures/Incompressible%20Flow/velocityfieldzoomed.jpeg" alt="geometry" height="300px"></th>
 </tr>
 </table>
-  <figcaption>Fig.4- Velocity field obtained from the incompressible flow simulation. Left: whole image, right: zoomed. In the pictures, some streamlines are plotted. </figcaption>
+  <figcaption>Fig.4- Velocity field obtained from the incompressible flow simulation. Left: whole image, right: zoomed. In the pictures, some streamlines are plotted. </figcaption><br><br>
 </figure>
 
 
@@ -337,7 +338,7 @@ Furthermore, the plotted streamlines show a preferential trend in following the 
     <th><img src=".//Figures/Incompressible%20Flow/velocitylong.jpeg" alt="geometry" height="500px"> </th>
 </tr>
 </table>
-  <figcaption>Fig.5-  Cartesian plots of velocity vs. distance along two different axes. Left: x=0.0009m (vertical), right: y=0.0007 (horizontal).</figcaption>
+  <figcaption>Fig.5-  Cartesian plots of velocity vs. distance along two different axes. Left: x=0.0009m (vertical), right: y=0.0007 (horizontal).</figcaption><br><br>
 </figure>
 
 
@@ -486,9 +487,28 @@ In the upper plots, corresponding to the non-diffusion case, species trends to b
 
 This comparison shows the importance of the mass diffusion on transport in porous media, which affects the species deployment at the pore scale. However, it is necessary to evaluate if this issue has an important effect on the outcomes according to the specific operation.
 
-### Effect of the size of the chemical scalar without retention
+### Effect of the size of the chemical species transport
+
+
 
 ### Effect of the size of the chemical scalar without retention
+
+<figure>
+    <table border="0">
+  <tr>
+    <th><img src="./Experiments/Experiment3/graphs_prebreakthrough.png" alt="geometry" height="500px"> </th>
+    <th><img src="./Experiments/Experiment6/graphs_prebreakthrough.png" alt="geometry" height="500px"> </th>
+</tr>
+<tr>
+    <th>Without retention. </th>
+    <th>With retention. </th>
+</tr>
+  <figcaption>Fig.7-  Comparison between cases without and with retention for a species size of 50 nm. Each plot shows the evolution of the concentration profile along the horizontal axis at y=0.0007m. </figcaption>
+  <br> <br>
+</figure>
+  
+  
+
 
 ## 4. Conclusions
 
