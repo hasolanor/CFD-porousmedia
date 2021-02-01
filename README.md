@@ -1,4 +1,4 @@
-# Chemical scalars transport in porous media: a 2D CFD study at the pore-scale
+# Chemical species transport in porous media: a 2D CFD study at the pore-scale
 Hillmert A. Solano
 ## Presentation (video)
 
@@ -51,19 +51,19 @@ The widely known Navier-Stokes equations are used to model the fluid flow throug
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large u_x \frac{\partial u_y}{\partial x}%2B u_y \frac{\partial u_y}{\partial y}-\nu \left( \frac{\partial^2 u_y}{\partial x^2}%2B \frac{\partial^2 u_y}{\partial y^2} \right) %2B \frac{1}{\rho} \frac{\partial P}{\partial y}=0">
 
-where <img src="https://render.githubusercontent.com/render/math?math=\Large u_j"> is the j-component of the flow velocity vector, <img src="https://render.githubusercontent.com/render/math?math=\Large \nu"> is the kinematic viscosity of the fluid, <img src="https://render.githubusercontent.com/render/math?math=\Large \rho"> is the fluid density, and <img src="https://render.githubusercontent.com/render/math?math=\Large P"> is the pressure.
+where <img src="https://render.githubusercontent.com/render/math?math=\normalsize u_j"> is the j-component of the flow velocity vector, <img src="https://render.githubusercontent.com/render/math?math=\normalsize \nu"> is the kinematic viscosity of the fluid, <img src="https://render.githubusercontent.com/render/math?math=\normalsize \rho"> is the fluid density, and <img src="https://render.githubusercontent.com/render/math?math=\normalsize P"> is the pressure.
 
 In order to delimite the mathematical problem regarding incompressible flow, initial and boundary conditions are proposed based on the problem statement. As an initial condition, zero velocity and a constant pressure are considered.
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large u_x (t=0)=0, u_y (t=0)=0, P (t=0)=P_{out}">
 
-where <img src="https://render.githubusercontent.com/render/math?math=\Large P_{out}"> is the initial pressure considered for the experiments. 
+where <img src="https://render.githubusercontent.com/render/math?math=\normalsize P_{out}"> is the initial pressure considered for the experiments. 
 
 Regarding the boundary conditions, constant velocity and pressure zero grandient are considered as inlet boundary conditions.
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large \frac{\partial P}{\partial x} |_{\small \textrm{inlet}}=0, u_x|_{\small \textrm{inlet}}=u_{in}, u_y|_{\small \textrm{inlet}}=0">
 
-where <img src="https://render.githubusercontent.com/render/math?math=\Large u_{in}"> is the injection velocity at the inlet port. 
+where <img src="https://render.githubusercontent.com/render/math?math=\normalsize u_{in}"> is the injection velocity at the inlet port. 
 
 Although, at the outlet boundary, constant pressure and velocity zero gradient, corresponding to an outlow-type condition. 
 
@@ -102,19 +102,25 @@ On the other hand, chemical scalar transport are modelled by the unsteady Advect
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large \frac{\partial c}{\partial t}-\left(u_x \frac{\partial c}{\partial x} %2B u_y \frac{\partial c}{\partial x} \right) %2B D \left( \frac{\partial^2 c}{\partial x^2} %2B \frac{\partial^2 c}{\partial y^2}\right)=0">
 
-where <img src="https://render.githubusercontent.com/render/math?math=\Large c"> is the scalar concentration in the fluid and <img src="https://render.githubusercontent.com/render/math?math=\Large D"> is the mass diffusion coefficient of the specie in the fluid.
+where <img src="https://render.githubusercontent.com/render/math?math=\normalsize c"> is the scalar concentration in the fluid and <img src="https://render.githubusercontent.com/render/math?math=\normalsize D"> is the mass diffusion coefficient of the specie in the fluid.
+
+Taking into account that reactions are neglected and Reynold number is low; the approximation proposed by Stokes-Einstein can be used to estimate the mass diffusion coefficient. 
+
+<img src="https://render.githubusercontent.com/render/math?math=\Large D = \frac{k_b T}{3 \pi \nu \rho d_s }">
+
+where <img src="https://render.githubusercontent.com/render/math?math=\normalsize k_b"> is the Boltzman constant (1.38e-23 J/K) and <img src="https://render.githubusercontent.com/render/math?math=\normalsize d_s"> is the diameter of the specie.
 
 Following the same steps for the problem delimitation, a constant concentration field is considered as an initial condition of this problem:
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large c(t=0)=c_0">
 
-where <img src="https://render.githubusercontent.com/render/math?math=\Large c_0"> is the initial concentration along the spatial domain. 
+where <img src="https://render.githubusercontent.com/render/math?math=\normalsize c_0"> is the initial concentration along the spatial domain. 
 
 As a boundary condition at inlet, a constant concentration is assumed:
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large c|_{\small \textrm{inlet}}=c_{in}">
 
-where <img src="https://render.githubusercontent.com/render/math?math=\Large c_{in}"> is the concentration at the injection port.
+where <img src="https://render.githubusercontent.com/render/math?math=\normalsize c_{in}"> is the concentration at the injection port.
 
 Althought, a zero concentration gradient at the outlet is considered:
 
@@ -124,9 +130,15 @@ For the grains boundary, a model for retention is used to represent the surface 
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large -D\left( \frac{\partial^2 c}{\partial x^2} %2B \frac{\partial^2 c}{\partial y^2}\right) |_{\small \textrm{grain}} = K_a \left( 1-\frac{s}{s_{max}} \right)c - K_d s">
 
-where <img src="https://render.githubusercontent.com/render/math?math=\Large s"> is the retained concentration onto the solid surface, 
-where <img src="https://render.githubusercontent.com/render/math?math=\Large s"> is the retained concentration onto the solid surface, 
-where <img src="https://render.githubusercontent.com/render/math?math=\Large k_a"> and <img src="https://render.githubusercontent.com/render/math?math=\Large k_d"> are the kinetic constants representing respectively attachment and detachment rates of the scalar onto/from the rock surface.
+where <img src="https://render.githubusercontent.com/render/math?math=\normalsize s"> is the retained concentration onto the solid surface, 
+where <img src="https://render.githubusercontent.com/render/math?math=\normalsize s_{max}"> is the solid surface capacity, 
+where <img src="https://render.githubusercontent.com/render/math?math=\normalsize k_a"> and <img src="https://render.githubusercontent.com/render/math?math=\normalsize k_d"> are the kinetic constants representing respectively attachment and detachment rates of the scalar onto/from the rock surface.
+
+The solid surface capacity can be estimated based on a surface occupancy by the next equation:
+
+<img src="https://render.githubusercontent.com/render/math?math=\Large s_{max} = \frac{\pi}{6}  a_s \rho_s d_s ">
+
+where <img src="https://render.githubusercontent.com/render/math?math=\normalsize d_s"> is the diameter of the specie, <img src="https://render.githubusercontent.com/render/math?math=\normalsize a_s"> is the surface area to porous volume ratio, and <img src="https://render.githubusercontent.com/render/math?math=\normalsize \rho_s"> is the specie density.
 
 Finally, as it was assumed for the incompresssible flow problem, upper and lower boundaries are considered as axes of symmetry for concentration too.
 
@@ -270,7 +282,7 @@ The numerical solution schemes for this problem are presented below in Table 4.
 
 ### Incompressible flow
 
-Regarding the incompressible flow problem, one experiment is proposed considering the input data shown in Table 5. Its results are used as input in the scalar transport experiments in order to evaluate the transport dynamics of the chemical scalar. 
+One numerical experiment is carried out considering the input data shown in Table 5 for the incompressible flow problem. Its results are used as input in the scalar transport experiments in order to evaluate the transport dynamics of the chemical scalar. 
 
 <table>
   <caption style="text-align:right">Table 5. Input data used for the incompressible flow simulation.</caption>
@@ -303,7 +315,7 @@ From this CFD simulation, velocity and pressure fields are obtained. Figure 3 sh
 </figure>
 
 
-On another vein, Figure 4 shows the velocity magnitude heatmap with a set of streamlines obtained by postprocessing; while Figure 5 presents a cartesian plot of the velocity magnitude along a vertical axis located at x=0.0009m (a vertical axis at the middle of the spatial domain). Both figures shows that there are local gradients of velocity magnitude in the pore throats. These gradients can be explained by momentum transfers due to viscous forces between two no-slipping walls in each throat, in which the maximum velocity is reached at the middle of the pore throat and a zero-relative velocity at the walls. 
+On another vein, Figure 4 shows the velocity magnitude heatmap with a set of streamlines obtained by postprocessing; while Figure 5 contains two cartesian plot of the velocity magnitude along a vertical and an horizontal axes located at x=0.0009m and y=0.0007m respectively. Both figures shows that there are local gradients of velocity magnitude in the pore throats. These gradients can be explained by momentum transfers due to viscous forces between two no-slipping walls in each throat, in which the maximum velocity is reached at the middle point of the pore throat and a zero-relative velocity at the walls. 
 
 Furthermore, the plotted streamlines show a preferential trend in following the direction of the pressure gradient. Comparing with the velocity heatmap, it can be concluded that the higher velocity magnitudes correspond to the zones with greater streamlines densities. For this reason, high-velocity zones lead to preferential flow paths in the porous medium.
 
@@ -328,41 +340,10 @@ Furthermore, the plotted streamlines show a preferential trend in following the 
   <figcaption>Fig.5-  Cartesian plots of velocity vs. distance along two different axes. Left: x=0.0009m (vertical), right: y=0.0007 (horizontal).</figcaption>
 </figure>
 
-<figure>
-  <table border="0">
-  <tr>
-    <th><img src="./Figures/Incompressible%20Flow/velocitywallshearstress.jpeg" alt="geometry" height="300px"> </th>
-    <th><img src="./Figures/Incompressible%20Flow/velocitywallshearstresszoomed.jpeg" alt="geometry" height="300px"></th>
-</tr>
-</table>
-  <figcaption>Fig.6-  Wall shear stress obtained from the incompressible flow simulation. Left: whole image, right: zoomed.</figcaption>
-</figure>
-
-
-
-
-
-
-
 
 
 ### Scalar Transport
 
-
-Taking into account that reactions are neglected and Reynold number is low; the approximation proposed by Stokes-Einstein can be used to estimate the mass diffusion coefficient. 
-
-<img src="https://render.githubusercontent.com/render/math?math=\Large D = \frac{k_b T}{3 \pi \nu \rho d_s }">
-
-where <img src="https://render.githubusercontent.com/render/math?math=\normalsize k_b"> is the Boltzman constant (1.38e-23 J/K) and <img src="https://render.githubusercontent.com/render/math?math=\normalsize d_s"> is the diameter of the specie.
-
-On the other hand, to estimate the retention capacity of the porous medium, the next equation is proposed based on a surface occupancy.
-
-<img src="https://render.githubusercontent.com/render/math?math=\Large s_{max} = \frac{\pi}{6}  a_s \rho_s d_s ">
-
-where <img src="https://render.githubusercontent.com/render/math?math=\normalsize d_s"> is the diameter of the specie, <img src="https://render.githubusercontent.com/render/math?math=\normalsize a_s"> is the surface area to porous volume ratio, and <img src="https://render.githubusercontent.com/render/math?math=\normalsize \rho_s"> is the specie density.
-
-
-where <img src="https://render.githubusercontent.com/render/math?math=\normalsize k_b"> is the Boltzman constant (1.38e-23 J/K), <img src="https://render.githubusercontent.com/render/math?math=\normalsize d_s"> is the diameter of the specie, <img src="https://render.githubusercontent.com/render/math?math=\normalsize a_s"> is the surface area to porous volume ratio, and <img src="https://render.githubusercontent.com/render/math?math=\normalsize \rho_s"> is the specie density.
 
 <table>
   <caption style="text-align:right">Table 6. Input data used for the numerical experiments.</caption>
