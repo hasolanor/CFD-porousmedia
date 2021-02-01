@@ -487,28 +487,26 @@ In the upper plots, corresponding to the non-diffusion case, species trends to b
 
 This comparison shows the importance of the mass diffusion on transport in porous media, which affects the species deployment at the pore scale. However, it is necessary to evaluate if this issue has an important effect on the outcomes according to the specific operation.
 
-### Effect of the size of the chemical species transport
-
-
-
 ### Effect of the size of the chemical scalar without retention
+
+Aiming to evaluate the effect of the retention on transport dynamics, Figure 8 shows the evolution of concentration profile along the axis y=0.0007m (horizontal) for Experiment 3 (without retention) and Experiment 4 (with retention) for a species with size of 50nm.
 
 <figure>
     <table border="0">
   <tr>
-    <th><img src="./Experiments/Experiment3/graphs_prebreakthrough.png" alt="geometry" height="500px"> </th>
-    <th><img src="./Experiments/Experiment6/graphs_prebreakthrough.png" alt="geometry" height="500px"> </th>
+    <th><img src="./Experiments/Experiment3/graphs_prebreakthrough.png" alt="geometry" height="350px"> </th>
+    <th><img src="./Experiments/Experiment6/graphs_prebreakthrough.png" alt="geometry" height="350px"> </th>
 </tr>
 <tr>
     <th>Without retention. </th>
     <th>With retention. </th>
 </tr>
-  <figcaption>Fig.7-  Comparison between cases without and with retention for a species size of 50 nm. Each plot shows the evolution of the concentration profile along the horizontal axis at y=0.0007m. </figcaption>
+      </table>
+  <figcaption>Fig.8-  Comparison between cases without and with retention for a species size of 50 nm. Each plot shows the evolution of the concentration profile along the horizontal axis at y=0.0007m. </figcaption>
   <br> <br>
 </figure>
-  
-  
 
+According to these plots, injection concentration is reached in all the spatial domain in the non-retention case while in the retention case the concentration reaches a concentration distribution. This difference can be explained by the retention dynamics where a part of the injected species mass is retained onto the rock surface while the rest is transported across the porous medium. Instead, where there is no retention, all species mass is transported in the porous medium by the defined mechanisms.
 
 ## 4. Conclusions
 
