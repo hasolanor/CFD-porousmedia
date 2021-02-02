@@ -568,6 +568,8 @@ According to these plots, injection concentration is reached in all the spatial 
 
 ## Annex 2: Convergence Study
 
+Aiming to select the best method to solve the numerical model regarging the incompressible flow problem in OpenFOAM. The available methods are Semi-Implicit Method for Pressure Linked Equations (SIMPLE), Pressure-Implicit with Splitting of Operators (PISO) in steady and unsteady flow, and the combination of both ones (PIMPLE). The next Figure contains the residual logs obtained for these simulations.
+
 <figure>
   <table border="0">
   <tr>
@@ -575,9 +577,11 @@ According to these plots, injection concentration is reached in all the spatial 
     <th><img src="./Figures/Convergence/methodscomparisonv.jpg" alt="geometry" height="350px"> </th>
   </tr>
   </table>
-  <figcaption>Fig. Comparison between cases without and with retention for a species size of 50 nm. Each plot shows the evolution of the concentration profile along the horizontal axis at y=0.0007m. </figcaption>
+  <figcaption> Fig. Residual logs obtained for different algorithms for incompressible flow solution.  Pressure (left), velocities (right). </figcaption>
   <br> <br>
 </figure>
+
+This figure shows clearly that the solution by SIMPLE algorithm shows the faster and more stable solution with respect to the other ones. In this sense, this is the more appropiate method to run the simulations.
 
 ## Annex 3: Timestep independence analysis
 
