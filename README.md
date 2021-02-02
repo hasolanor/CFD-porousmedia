@@ -2,23 +2,21 @@
 Hillmert A. Solano
 ## Presentation (video)
 
-
-
 ## 1. Introduction
-The injection of tailored solutions with chemical scalars; such as polymers, surfactants, nanoparticles, salts, and others;  has become very common in subsurface engineering applications. Enhanced Oil Recovery (EOR) operations are a good example of these applications, in which chemical scalars use to be injected to generate or favour different interactions that improve oil and gas production. On another vein, the remotion of non-aqueous liquid phases (NAPL) and solid pollutants from soil and groundwater bodies can be improved using chemical scalars. Furthermore, recent studies show a positive impact on the carbon dioxide storage capacity when a Geological Carbon Sequestration (GCS) operation is upgraded by the use of chemical scalars. All above accounts for the importance of the study of chemical scalar behaviour in porous media targeting to improving its understanding and the design process of these operations.
+The injection of tailored solutions with chemical species; such as polymers, surfactants, nanoparticles, salts, and others;  has become very common in subsurface engineering applications. Enhanced Oil Recovery (EOR) operations are a good example of these applications, in which chemical species use to be injected to generate or favour different interactions that improve oil and gas production. On another vein, the remotion of non-aqueous liquid phases (NAPL) and solid pollutants from soil and groundwater bodies can be improved using chemical species. Furthermore, recent studies show a positive impact on the carbon dioxide storage capacity when a Geological Carbon Sequestration (GCS) operation is upgraded by the use of chemical species. All above accounts for the importance of the study of chemical species behaviour in porous media targeting to improving its understanding and the design process of these operations.
 
-One of the most important issues involved in the behaviour of chemica scalars in porous media are the transport phenomena. When a chemical scalar is injected into a porous medium, several transport mechanisms are followed. These mechanisms are strongly associated with its interactions with other scalar particles/molecules, the carrier fluid, and the solid surface; and govern its deployment inside the porous medium. With this in mind, a proper representation of the transport dynamics exhibed by the chemical scalars inside the porous media is key to design a subsurface engineering application involving chemical scalars.
+One of the most important issues involved in the behaviour of chemical species in porous media are the transport phenomena. When a chemical species is injected into a porous medium, several transport mechanisms are followed. These mechanisms are strongly associated with its interactions with other species particles/molecules, the carrier fluid, and the solid surface; and govern its deployment inside the porous medium. With this in mind, a proper representation of the transport dynamics exhibed by the chemical species inside the porous media is key to design a subsurface engineering application involving chemical species.
 
-This work is focused on the phenomenological study of transport dynamics followed by chemical scalars in porous media. In order to address this objective, a CFD framework-based study is carried out. Firstly, the methodology is presented, including the problem statement, the mathematical formulation and the main variables leading to the transport dynamics, meshing and solution schemes, and the description of the numerical experiments run in this work. Subsequently, the obtained results are discussed assessing the impact of the chemical scalars features on the transport behaviour. Finally, some conclusions are presented. Furthermore, some annexes with more detailed information regarding the CFD approach are referenced.
+This work is focused on the phenomenological study of transport dynamics followed by chemical species in porous media. In order to address this objective, a CFD framework-based study is carried out. Firstly, the methodology is presented, including the problem statement, the mathematical formulation and the main variables leading to the transport dynamics, meshing and solution schemes, and the description of the numerical experiments run in this work. Subsequently, the obtained results are discussed assessing the impact of the chemical species features on the transport behaviour. Finally, some conclusions are presented. Furthermore, some annexes with more detailed information regarding the CFD approach are referenced.
 
 ## 2. Methodology
 Under a CFD approach, this study follows a phenomenological methodology (**Bear, 2018**) that is presented below.
 
 ### Problem Statement
 
-Aiming to simplify the problem, but keeping in mind the objectives of this study, a 2D geometry is proposed. This geometry contains a regular porous medium in the middle formed by circular grains as shown in Figure 1. The study is delimited to the injection of a chemical scalar concentration dispersed in a single phase fluid through the inlet port. This scalar is transported inside the spatial domain and exits at the outlet port. Inside the porous medium, the chemical scalars follows the carrier fluid flow by the *advection* mechanism. In addition, concentration gradients in the medium lead to a scalar transport towards the regions with less concentration by *molecular diffusion*.
+Aiming to simplify the problem, but keeping in mind the objectives of this study, a 2D geometry is proposed. This geometry contains a regular porous medium in the middle formed by circular grains as shown in Figure 1. The study is delimited to the injection of a chemical species concentration dispersed in a single phase fluid through the inlet port. This species is transported inside the spatial domain and exits at the outlet port. Inside the porous medium, the chemical species follows the carrier fluid flow by the *advection* mechanism. In addition, concentration gradients in the medium lead to a species transport towards the regions with less concentration by *molecular diffusion*.
 
-Transversaly, when the chemical scalars reach the porous medium, surface-level interactions generate a mass scalar flux from or towards the rock surface (**Bueno et. al., 2019**, **Boccardo et. al., 2017**). The rate and the direction of this flux depends on the solid surface composition, chemical nature of the specie, chemical and dynamic properties of the carrier fluids, and concentrations in the fluid and retained onto the surface.
+Transversaly, when the chemical species reach the porous medium, surface-level interactions generate a mass flux from or towards the rock surface (**Bueno et. al., 2019**, **Boccardo et. al., 2017**). The rate and the direction of this flux depends on the solid surface composition, chemical nature of the specie, chemical and dynamic properties of the carrier fluids, and concentrations in the fluid and retained onto the surface.
 
 <figure>
   <img src="./Figures/General/geometry.jpeg" alt="geometry" style="width: 10px">
@@ -32,15 +30,15 @@ Some assumptions are listed below:
 <ul>
   <li>The carrier fluid behaves as a Newtonian fluid (i.e. viscosity is not a function of the shear rate).</li>  
   <li>Flow regime is laminar (low Reynolds numbers).</li>
-  <li>The concentration of the chemical scalar does not affect fluid viscosity (low concentration).</li>
-  <li>The concentration of the chemical scalar does not affect diffusivity (Fickian mass transport).</li>
+  <li>The concentration of the chemical species does not affect fluid viscosity (low concentration).</li>
+  <li>The concentration of the chemical species does not affect diffusivity (Fickian mass transport).</li>
   <li>Diffusion coefficient is constant for all points in the space and all directions.</li>
   <li>There is no energy transport mechanism affecting the mass and momentum transports.</li>
 </ul>
 
 ### Mathematical Formulation and Dimensionless Variables
 
-As mentioned above, the transport of a scalar depends strongly on fluid flow in the porous medium. For this reason, this formulation is divided into two problems: the first one is based on the fluid flow through the porous media; meanwhile the second one is associated with the chemical scalar transport.
+As mentioned above, the transport of a species depends strongly on fluid flow in the porous medium. For this reason, this formulation is divided into two problems: the first one is based on the fluid flow through the porous media; meanwhile the second one is associated with the chemical species transport.
 
 #### Incompressible flow
 
@@ -98,12 +96,12 @@ Based on this mathematical model, two dimensionless numbers govern incompressibl
 </table>
 <br>
 
-#### Chemical scalar transport
-On the other hand, chemical scalar transport are modelled by the unsteady Advection-Diffusion (ADR) equation. By this equation, and with a predefined velocity field, the concentration field can be computed:
+#### Chemical species transport
+On the other hand, chemical species transport are modelled by the unsteady Advection-Diffusion (ADR) equation. By this equation, and with a predefined velocity field, the concentration field can be computed:
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large \frac{\partial c}{\partial t}-\left(u_x \frac{\partial c}{\partial x} %2B u_y \frac{\partial c}{\partial x} \right) %2B D \left( \frac{\partial^2 c}{\partial x^2} %2B \frac{\partial^2 c}{\partial y^2}\right)=0">
 
-where <img src="https://render.githubusercontent.com/render/math?math=\normalsize c"> is the scalar concentration in the fluid and <img src="https://render.githubusercontent.com/render/math?math=\normalsize D"> is the mass diffusion coefficient of the specie in the fluid.
+where <img src="https://render.githubusercontent.com/render/math?math=\normalsize c"> is the species concentration in the fluid and <img src="https://render.githubusercontent.com/render/math?math=\normalsize D"> is the mass diffusion coefficient of the species in the fluid.
 
 Taking into account that reactions are neglected and Reynold number is low; the approximation proposed by Stokes-Einstein can be used to estimate the mass diffusion coefficient. 
 
@@ -127,13 +125,13 @@ Althought, a zero concentration gradient at the outlet is considered:
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large \frac{\partial c}{\partial x}|_{\small \textrm{outlet}}=0">
 
-For the grains boundary, a model for retention is used to represent the surface phenomena. **Bueno et. al. (2020)** propose an schema based on an Langmuir-type retention model, in which attachment onto the surface depends on the chemical scalar concentration in the fluid and the retained concentration. So, this boundary condition can be expressed as follow:
+For the grains boundary, a model for retention is used to represent the surface phenomena. **Bueno et. al. (2020)** propose an schema based on an Langmuir-type retention model, in which attachment onto the surface depends on the chemical species concentration in the fluid and the retained concentration. So, this boundary condition can be expressed as follow:
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large -D\left( \frac{\partial^2 c}{\partial x^2} %2B \frac{\partial^2 c}{\partial y^2}\right) |_{\small \textrm{grain}} = K_a \left( 1-\frac{s}{s_{max}} \right)c - K_d s">
 
 where <img src="https://render.githubusercontent.com/render/math?math=\normalsize s"> is the retained concentration onto the solid surface, 
 where <img src="https://render.githubusercontent.com/render/math?math=\normalsize s_{max}"> is the solid surface capacity, 
-where <img src="https://render.githubusercontent.com/render/math?math=\normalsize k_a"> and <img src="https://render.githubusercontent.com/render/math?math=\normalsize k_d"> are the kinetic constants representing respectively attachment and detachment rates of the scalar onto/from the rock surface.
+where <img src="https://render.githubusercontent.com/render/math?math=\normalsize k_a"> and <img src="https://render.githubusercontent.com/render/math?math=\normalsize k_d"> are the kinetic constants representing respectively attachment and detachment rates of the species onto/from the rock surface.
 
 The solid surface capacity can be estimated based on a surface occupancy by the next equation:
 
@@ -143,10 +141,10 @@ where <img src="https://render.githubusercontent.com/render/math?math=\normalsiz
 
 Finally, as it was assumed for the incompresssible flow problem, upper and lower boundaries are considered as axes of symmetry for concentration too.
 
-For the chemical scalar transport, there are three dimensionless numbers characterising the problem. Péclet number corresponds to the ratio between advection and diffusion fluxes; meanwhile both Damkhöler numbers are defined as ratios between attachment/detachment and diffusion fluxes.
+For the chemical species transport, there are three dimensionless numbers characterising the problem. Péclet number corresponds to the ratio between advection and diffusion fluxes; meanwhile both Damkhöler numbers are defined as ratios between attachment/detachment and diffusion fluxes.
 
 <table>
-  <caption style="text-align:right">Dimensionless numbers for scalar transport problem.</caption>
+  <caption style="text-align:right">Dimensionless numbers for species transport problem.</caption>
   <tr>
     <th>Dimensionless</th>
     <th>Definition</th>
@@ -202,7 +200,7 @@ A mesh independence assessment is presented in the Annex 1.
 
 ### Solution schemes
 
-Both problems, the incompressible flow and scalar transport ones, are solved using OpenFOAM, a widely recognised open source package for CFD applications with a Finite Volume-based framework.
+Both problems, the incompressible flow and species transport ones, are solved using OpenFOAM, a widely recognised open source package for CFD applications with a Finite Volume-based framework.
 
 #### Incompressible Flow
 
@@ -244,14 +242,14 @@ The numerical solution schemes for this problem are presented below in Table 3.
 <br>
 
 
-#### Scalar Transport
+#### Species Transport
 
-The chemical specie transport problem is solved using the scalarTransportFoam solver. Particularly, the adaptation developed by the the ***Multiscale Modelling and Heterogeneous Media group*** of the University of Nottingham is used because it includes a proper boundary condition represention for the retention dynamics onto solid surfaces based on Langmuir kinetic and others (**Bueno et. al. 2020**). **Bueno et. al. 2020** shows a more detailed information respect to the implementation of this computational model.
+The chemical specie transport problem is solved using the scalarTransportFoam solver. Particularly, the adaptation developed by the the ***Multiscale Modelling and Heterogeneous Media group*** of the University of Nottingham is used because it includes a proper boundary condition represention for the retention dynamics onto solid surfaces based on Langmuir kinetic and others (**Bueno et. al. 2020**). **Bueno et. al. 2020** show a more detailed information respect to the implementation of this computational model.
 
 The numerical solution schemes for this problem are presented below in Table 4.
 
 <table>
-  <caption style="text-align:right">Table 4. Numerical solution features for the scalar transport problem.</caption>
+  <caption style="text-align:right">Table 4. Numerical solution features for the species transport problem.</caption>
   <tr>
     <th>Feature</th>
     <th>Scheme</th>
@@ -283,7 +281,7 @@ The numerical solution schemes for this problem are presented below in Table 4.
 
 ### Incompressible flow
 
-The incompressible flow simulation is run using the input data presented in Table 5. Its results are used as input in the scalar transport experiments in order to evaluate the transport dynamics of the chemical scalar. 
+The incompressible flow simulation is run using the input data presented in Table 5. Its results are used as input in the species transport experiments in order to evaluate the transport dynamics of the chemical species. 
 
 <table>
   <caption style="text-align:right">Table 5. Input data used for the incompressible flow simulation.</caption>
@@ -342,9 +340,9 @@ Furthermore, the plotted streamlines show a preferential trend in following the 
 </figure>
 
 
-From the above, the outcomes obtained from the incompressible flow simulation are consistents and can be applied to run the scalar transport simulations.
+From the above, the outcomes obtained from the incompressible flow simulation are consistents and can be applied to run the species transport simulations.
 
-### Scalar Transport
+### Species Transport
 
 In order to address this study, a set of seven numerical experiments was run. The corresponding dataset is presented in Table 6. In order to address this study, a set of seven numerical experiments was run. The corresponding dataset is presented in Table 6. Experiment 1 simulates a hypothetical case where transport mechanisms by diffusion and retention dynamics are neglected, so the advection governs the chemical species transport across the porous medium. Although, Experiments 2, 3, and 4 corresponds to cases for a specific chemical species size neglecting retention dynamics. Finally, Experiments 5, 6, and 7 simulate the same cases of the three last ones considering a retention rate. 
   
@@ -450,7 +448,7 @@ The next schedule is simulate for all of the proposed experiments:
   
 A time-step of 6s has been chosen for all simulations. Annex 4 presents a time-step independence analysis that concludes that this value is proper to this type of simulation.
 
-### Effect of the diffusion on the chemical specie transport
+### Effect of the diffusion on the chemical species transport
 
 Figure 6 presents a set of screenshots obtained from the simulation video zoomed to pore scale for Experiments 1 and 3. These screenshots are obtained at t=480 s (during the dispersion injection), t=1200 s (when the dispersion injection stops), and t=1680 s (during fresh fluid injection) for both cases. 
 
@@ -488,28 +486,61 @@ This comparison shows the importance of the mass diffusion on transport in porou
 
 ### Effect of the size of the chemical species in transport (without retention)
 
+To evaluate the effect of the species size on the transport dynamics neglecting the effect of the retention, Experiments 2, 3, and 4 are compared. Figure 7 contains some heatmaps corresponding to these experiments at the moment before reaching the injection concentration at the exit port.
+
 <figure>
-    <th><img src="./Figures/ScalarTranport/breakthrough-nonretention.png" alt="geometry" height="500px"> </th>
-  <figcaption>Fig.7-  Screenshot obtained from simulation corresponding to Experiment 1 (upper) and Experiment 3 (lower). For each experiment, the screeshots correspond to 480 s (left), 1200 s (centre), and 1680 s (right). </figcaption>
+  <table border="0">
+  <tr>
+    <th><img src="./Experiments/Experiment2/animation_experiment2_CDF-porousmedia_beforebt.jpg" alt="geometry" height="250px"> </th>
+    <th><img src="./Experiments/Experiment3/animation_experiment3_CDF-porousmedia_beforebt.jpg" alt="geometry" height="250px"> </th>
+    <th><img src="./Experiments/Experiment4/animation_experiment4_CDF-porousmedia_beforebt.jpg" alt="geometry" height="250px"> </th>
+</tr>
+  <tr>
+    <th>Experiment 2. </th>
+    <th>Experiment 3. </th>
+    <th>Experiment 4. </th>
+</tr>
+</table>
+  <figcaption>Fig.7-  Screenshot obtained from simulation corresponding to Experiment 2 (left), Experiment 3 (centre), and Experiment 4 (right) at the moment before reaching the injection concentration at the outlet port. </figcaption>
   <br> <br>
 </figure>
 
+From these plots, it can be noted that the concentration front is more homogeneous when the species size is lower because the diffusion coefficient is greater, so the diffusive flux gets higher. Instead, when the species size is greater, the front trends to be transported mainly towards the streamlines' high density regions. However, unlike the non retention case, a higher concentration than the injection ones is not reached at no point in the spatial domain.
+
+Figure 8 contains the breakthough curves for these experiments, which corresponds to concentration plot over time at the exit port for each one. 
+
+<figure>
+  <table border="0">
+  <tr>
+    <th><img src="./Figures/ScalarTranport/breakthrough-nonretention.png" alt="geometry" height="500px"> </th>
+</tr>
+</table>
+  <figcaption>Fig.8-  Breakthrough curves obtained for Experiment 1,  2, 3, and 4. </figcaption>
+  <br> <br>
+</figure>
+
+The above curves shows a delay for the higher species size (i.e. lower diffusion coefficient) because the mass diffusion flux favours the transport towards the exit. However, the faster breakthrough correspond to the non diffusion case (i.e. <img src="https://render.githubusercontent.com/render/math?math=\normalsize d_s \rightarrow \infty">). This is a consequence of the slow invasion of the chemical species in the regions with low transport potential, so the injected species is transported towards the outlet port.
 
 ### Effect of the size of the chemical species in transport (with retention)
 
+To study the effect of the chemical species size on transport dynamics considering retention, Figure 9 contains the breakthrough curves for experiments 5, 6, and 7. 
 
 <figure>
+    <table border="0">
+  <tr>
     <th><img src="./Figures/ScalarTranport/breakthrough-retention-diameter.png" alt="geometry" height="500px"> </th>
-  <figcaption>Fig.8-  Screenshot obtained from simulation corresponding to Experiment 1 (upper) and Experiment 3 (lower). For each experiment, the screeshots correspond to 480 s (left), 1200 s (centre), and 1680 s (right). </figcaption>
+</tr>
+</table> 
+  <figcaption>Fig.9-  Breakthrough curves obtained for Experiment 5, 6, and 7. </figcaption>
   <br> <br>
 </figure>
 
-
+From these curves, it can be noted that the maximum concentration reached at the outlet port depends on the species size, reaching a greater concentrations for a larger size. This is a consequence of the site 
 
 
 ### Effect of the retention in the transport
 
-Aiming to evaluate the effect of the retention on transport dynamics, Figure 9 shows the evolution of concentration profile along the axis y=0.0007m (horizontal) for Experiment 3 (without retention) and Experiment 4 (with retention) for a species with size of 50nm.
+Aiming to evaluate the effect of the retention on transport dynamics, Figure 10 shows the evolution of concentration profile along the axis y=0.0007m (horizontal) for Experiment 3 (without retention) and Experiment 4 (with retention) for a species with size of 50nm.
 
 <figure>
     <table border="0">
@@ -522,7 +553,7 @@ Aiming to evaluate the effect of the retention on transport dynamics, Figure 9 s
     <th>With retention. </th>
 </tr>
       </table>
-  <figcaption>Fig.9-  Comparison between cases without and with retention for a species size of 50 nm. Each plot shows the evolution of the concentration profile along the horizontal axis at y=0.0007m. </figcaption>
+  <figcaption>Fig.10-  Comparison between cases without and with retention for a species size of 50 nm. Each plot shows the evolution of the concentration profile along the horizontal axis at y=0.0007m. </figcaption>
   <br> <br>
 </figure>
 
