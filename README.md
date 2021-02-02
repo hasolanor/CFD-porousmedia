@@ -566,6 +566,13 @@ According to these plots, injection concentration is reached in all the spatial 
 
 ## Annex 1: Mesh independence analysis
 
+273634
+Reading points
+Number of cells: 534702
+Other readCellGroupData: 9 1 828ae 1 1
+Reading uniform cells
+number of faces: 808394
+
 ## Annex 2: Convergence Study
 
 Aiming to select the best method to solve the numerical model regarging the incompressible flow problem in OpenFOAM. The available methods are Semi-Implicit Method for Pressure Linked Equations (SIMPLE), Pressure-Implicit with Splitting of Operators (PISO) in steady and unsteady flow, and the combination of both ones (PIMPLE). The next Figure contains the residual logs obtained for these simulations.
@@ -581,7 +588,7 @@ Aiming to select the best method to solve the numerical model regarging the inco
   <br> <br>
 </figure>
 
-This figure shows clearly that the solution by SIMPLE algorithm shows the faster and more stable solution with respect to the other ones. In this sense, this is the more appropiate method to run the simulations.
+This figure shows clearly that the solution by the SIMPLE algorithm shows a faster and more stable solution with respect to the other ones. In this sense, this is the more appropiate method to run the simulations.
 
 ## Annex 3: Timestep independence analysis
 
