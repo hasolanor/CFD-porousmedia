@@ -301,8 +301,7 @@ The incompressible flow simulation is run using the input data presented in Tabl
   </tr>
 </table>
 
-From this CFD simulation, velocity and pressure fields are obtained. Figure 3 shows the pressure heatmap obtained by simulation. This plot shows that pressure gradient between the inlet port and the outlet port is caused mainly by the flow dynamics in the porous media, which is expected considering the Darcy's law. Based on this phenomenological law, a validation of the flow model is presented in the Annex 3.
-
+From this CFD simulation, velocity and pressure fields are obtained. Figure 3 shows the pressure heatmap obtained by simulation. This plot shows that pressure gradient between the inlet port and the outlet port is caused mainly by the flow dynamics in the porous media, which is expected considering the Darcy's law.
 
 <figure>
   <table border="0">
@@ -446,7 +445,7 @@ The next schedule is simulate for all of the proposed experiments:
   <li> Injection of a fluid with a dispersed concentration of <img src="https://render.githubusercontent.com/render/math?math=\normalsize 0 kg/m^3"> between 1200s to 2400s.
 </ul>
   
-A time-step of 6s has been chosen for all simulations. Annex 4 presents a time-step independence analysis that concludes that this value is proper to this type of simulation.
+A time-step of 6s has been chosen for all simulations. Annex 3 presents a time-step independence analysis that concludes that this value is proper to this type of simulation.
 
 ### Effect of the diffusion on the chemical species transport
 
@@ -565,13 +564,22 @@ According to these plots, injection concentration is reached in all the spatial 
 ## 5. References
 
 
-## Annex 1
+## Annex 1: Mesh independence analysis
 
-## Annex 2
+## Annex 2: Convergence Study
 
-## Annex 3
+<figure>
+  <table border="0">
+  <tr>
+    <th><img src="./Figures/Convergence/methodscomparisonp.jpg" alt="geometry" height="350px"> </th>
+    <th><img src="./Figures/Convergence/methodscomparisonv.jpg" alt="geometry" height="350px"> </th>
+  </tr>
+  </table>
+  <figcaption>Fig. Comparison between cases without and with retention for a species size of 50 nm. Each plot shows the evolution of the concentration profile along the horizontal axis at y=0.0007m. </figcaption>
+  <br> <br>
+</figure>
 
-## Annex 4
+## Annex 3: Timestep independence analysis
 
 In order to select a proper timestep in the proposed CFD simulations, a previous evaluation of time step independence is carried out. Keeping this in mind, the proposed numerical experiment framework is run until 300 s for several timesteps. Then, the results are post-processed and a concentration profile over a horizontal axis (parallel to x-axis) is obtained for each considered timestep. These results are used to find the best timestep to run the simulations proposed in this project.
 
