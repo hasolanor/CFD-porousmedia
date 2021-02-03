@@ -579,9 +579,10 @@ According to these plots, injection concentration is reached in all the spatial 
 
 ## Annex 1: Mesh independence analysis
 
+In this annex, a mesh independence analysis is addressed. In that sense, three grids are proposed for this objective and the results obtained by the incompressible flow simulation are compared. These grids are generated using the ANSYS ICEM CFD software, and its features are presented in Table 7. Meshes 1 and 3 are shown in Figure 11 while mesh 2, corresponding to the base one, is plotted in Figure 2. Mesh 1 is more refined mesh than the base one while Mesh 3 is more coarse.
 
 <table>
-  <caption style="text-align:right">Table. Mesh features.</caption>
+  <caption style="text-align:right">Table 7. Meshes features used .</caption>
   <tr>
     <th>ID</th>
     <th>Type</th>
@@ -615,7 +616,8 @@ According to these plots, injection concentration is reached in all the spatial 
     <td>237 542</td>
   </tr>
 </table>
-<br>
+
+
 
 <figure>
   <table border="0">
@@ -624,11 +626,24 @@ According to these plots, injection concentration is reached in all the spatial 
     <th><img src="./Figures/General/mesh3.jpeg" alt="geometry" height="500px"> </th>
   </tr>
   </table>
-  <figcaption> Fig. Residual logs obtained for different algorithms for incompressible flow solution.  Pressure (left), velocities (right). </figcaption>
+  <figcaption> Fig.11- Additional meshes used to study the independence. Mesh 1 (left), Mesh 3 (right) </figcaption>
   <br> <br>
 </figure>
 
 
+Then, by running the corresponding incompressible flow simulations using the simpleFoam solver, it is possible to compare the outcomes. Figure 12 shows the velocity profile along a section of the vertical axis plotted in Figure 1-right by using three meshes.
+
+<figure>
+  <table border="0">
+  <tr>
+    <th><img src="./Figures/Incompressible%20Flow/comparison%20grids.png" alt="geometry" height="500px"> </th>
+  </tr>
+  </table>
+  <figcaption> Fig.12- Residual logs obtained for different algorithms for incompressible flow solution.  Pressure (left), velocities (right). </figcaption>
+  <br> <br>
+</figure>
+
+As a main conclusion of this plot, all of the proposed mesh can ....
 
 
 ## Annex 2: Convergence Study
