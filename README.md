@@ -20,15 +20,15 @@ Transversaly, when the chemical species reach the porous medium, surface-level i
 
 <figure>
   <img src="./Figures/General/geometry.jpeg" alt="geometry" style="width: 10px">
-  <img src="./Figures/General/boundaries.jpeg" alt="geometry" style="width: 10px">
-  <figcaption>Fig.1 - 2D Geometry used in this CFD study. All dimensions are in meters.</figcaption>
+  <img src="./Figures/General/boundarycond.png" alt="geometry" style="width: 10px">
+  <figcaption>Fig.1 - 2D Geometry used in this CFD study. Dimensions in meters (up), Boundaries and axes used to the 2D cartesian graphs (bottom).</figcaption>
   <br><br>
 </figure>
 
 Some assumptions are listed below:
 
 <ul>
-  <li>The carrier fluid behaves as a Newtonian fluid (i.e. viscosity is not a function of the shear rate).</li>  
+  <li>The carrier fluid behaves as a Newtonian fluid (i.e. viscosity is not a function of the shear rate).</li>
   <li>Flow regime is laminar (low Reynolds numbers).</li>
   <li>The concentration of the chemical species does not affect fluid viscosity (low concentration).</li>
   <li>The concentration of the chemical species does not affect diffusivity (Fickian mass transport).</li>
@@ -559,10 +559,14 @@ According to these plots, injection concentration is reached in all the spatial 
 
 ## 4. Conclusions
 
-
-
-## 5. References
-
+<ul>
+  <li>A CFD-based approach enables the study of chemical species transport in porous media at the microscale. By this, it is possible to forecast the dynamic deployment of the chemical species according to its hydrodynamics and retention mechanisms. </li>
+  <li>Incompressible flow in porous media is governed by mass and momentum transport. The distribution of the velocity field depends strongly on the porous medium morfology, being greater at the pore throats. </li>
+  <li>Species transport depends on the velocity field. When the ratio between diffusion and advection fluxes trends to zero, the species aremainly transported following the streamlines.</li>
+  <li>Chemical species retention onto the rock surface affects the transport dynamics inside the porous media. When there is a retention rate, a part of the injected scalar is retained in the porous medium and it is not recovered at the outlet port.</li>
+  <li>The size of the chemical species is a key factor in its transport across the porous medium. First, it determines the diffusion coefficient, affecting the hydrodynamic of the process . In addition, it condicionates the rock surface capacity to be occuped by the species, being important to determine the evolution of the concentration field over time.   </li>
+  <li>The size of the chemical species is a key factor in its transport across the porous medium.  </li>
+</ul>
 
 ## Annex 1: Mesh independence analysis
 
@@ -702,3 +706,8 @@ Then, the residuals logs for each timestep are presented below:
 </figure>
 
 Even though a 1 second timestep enables lower residuals with respect to the 6 second one, the difference between both concentration profiles is lower. Therefore, the difference between both residuals does not affect the simulation output. 
+
+
+## References
+
+
