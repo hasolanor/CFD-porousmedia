@@ -296,6 +296,7 @@ The incompressible flow simulation is run using the input data presented in Tabl
     <th><img src="https://render.githubusercontent.com/render/math?math=\normalsize P_{out}"> (Pa) </th>
     <th><img src="https://render.githubusercontent.com/render/math?math=\normalsize \nu"> (<img src="https://render.githubusercontent.com/render/math?math=\normalsize m^2/s">)</th>
     <th><img src="https://render.githubusercontent.com/render/math?math=\normalsize \rho"> (<img src="https://render.githubusercontent.com/render/math?math=\normalsize kg/m^3">)</th>
+    <th><img src="https://render.githubusercontent.com/render/math?math=\normalsize \Delta P_c"> (Pa)</th>
     <th><img src="https://render.githubusercontent.com/render/math?math=\normalsize N_{Re}"> </th>
     <th><img src="https://render.githubusercontent.com/render/math?math=\normalsize N_{Ru}"> </th>
 </tr>
@@ -304,6 +305,9 @@ The incompressible flow simulation is run using the input data presented in Tabl
     <td>0.00e+00</td>
     <td>1.00e-06 </td>
     <td>1.00e+03 </td>
+    <td>9.60e-05 </td>
+    <td>4.92e-03 </td>
+    <td>1.30e-04 </td>
   </tr>
 </table>
 
@@ -571,7 +575,6 @@ According to these plots, injection concentration is reached in all the spatial 
   <li>Species transport depends on the velocity field. When the ratio between diffusion and advection fluxes trends to zero, the species aremainly transported following the streamlines.</li>
   <li>Chemical species retention onto the rock surface affects the transport dynamics inside the porous media. When there is a retention rate, a part of the injected scalar is retained in the porous medium and it is not recovered at the outlet port.</li>
   <li>The size of the chemical species is a key factor in its transport across the porous medium. First, it determines the diffusion coefficient, affecting the hydrodynamic of the process . In addition, it condicionates the rock surface capacity to be occuped by the species, being important to determine the evolution of the concentration field over time.   </li>
-  <li>The size of the chemical species is a key factor in its transport across the porous medium.  </li>
 </ul>
 
 ## Annex 1: Mesh independence analysis
@@ -715,5 +718,13 @@ Even though a 1 second timestep enables lower residuals with respect to the 6 se
 
 
 ## References
+
+Bear, J. (2018). Modeling phenomena of flow and transport in porous media (Vol. 1). Cham: Springer International Publishing.
+
+Boccardo, G., Crevacore, E., Sethi, R., & Icardi, M. (2018). A robust upscaling of the effective particle deposition rate in porous media. Journal of contaminant hydrology, 212, 3-13.
+
+Bueno, N., Icardi, M., Municchi, F., Solano, H., & Mejía, J. (2020, September). Upscaling of Nanoparticle Retention Rate for Single-Well Applications From Pore-Scale Simulations. In ECMOR XVII (Vol. 2020, No. 1, pp. 1-15). European Association of Geoscientists & Engineers.
+
+
 
 
