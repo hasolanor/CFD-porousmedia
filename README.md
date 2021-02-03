@@ -19,9 +19,15 @@ Aiming to simplify the problem, but keeping in mind the objectives of this study
 Transversaly, when the chemical species reach the porous medium, surface-level interactions generate a mass flux from or towards the rock surface (**Bueno et. al., 2019**, **Boccardo et. al., 2017**). The rate and the direction of this flux depends on the solid surface composition, chemical nature of the specie, chemical and dynamic properties of the carrier fluids, and concentrations in the fluid and retained onto the surface.
 
 <figure>
-  <img src="./Figures/General/geometry.jpeg" alt="geometry" style="width: 10px">
-  <img src="./Figures/General/boundarycond.png" alt="geometry" style="width: 10px">
-  <figcaption>Fig.1 - 2D Geometry used in this CFD study. Dimensions in meters (up), Boundaries and axes used to the 2D cartesian graphs (bottom).</figcaption>
+    <table border="0">
+  <tr>
+    <th><img src="./Figures/General/geometry.jpeg" alt="geometry" width="1000px"></th>
+</tr>
+  <tr>
+    <th><img src="./Figures/General/boundarycond.png" alt="geometry" width="1000px"></th>
+</tr>
+</table>  
+  <figcaption>Fig.1 - 2D Geometry used in this CFD study. All dimensions are in meters.</figcaption>
   <br><br>
 </figure>
 
