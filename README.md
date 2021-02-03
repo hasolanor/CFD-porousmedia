@@ -566,12 +566,57 @@ According to these plots, injection concentration is reached in all the spatial 
 
 ## Annex 1: Mesh independence analysis
 
-273634
-Reading points
-Number of cells: 534702
-Other readCellGroupData: 9 1 828ae 1 1
-Reading uniform cells
-number of faces: 808394
+
+<table>
+  <caption style="text-align:right">Table. Mesh features.</caption>
+  <tr>
+    <th>ID</th>
+    <th>Type</th>
+    <th>Dimensions of grid</th>
+    <th>Number of points</th>
+    <th>Number of cells</th>
+    <th>Number of faces</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Tri</td>
+    <td>2</td>
+    <td>273 634</td>
+    <td>534 702</td>
+    <td>808 394</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Quad</td>
+    <td>2</td>
+    <td>245 093</td>
+    <td>238 806</td>
+    <td>483 957</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Tri</td>
+    <td>2</td>
+    <td>81 277</td>
+    <td>156 207</td>
+    <td>237 542</td>
+  </tr>
+</table>
+<br>
+
+<figure>
+  <table border="0">
+  <tr>
+    <th><img src="./Figures/General/mesh1.jpeg" alt="geometry" height="500px"> </th>
+    <th><img src="./Figures/General/mesh3.jpeg" alt="geometry" height="500px"> </th>
+  </tr>
+  </table>
+  <figcaption> Fig. Residual logs obtained for different algorithms for incompressible flow solution.  Pressure (left), velocities (right). </figcaption>
+  <br> <br>
+</figure>
+
+
+
 
 ## Annex 2: Convergence Study
 
