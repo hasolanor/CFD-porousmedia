@@ -651,7 +651,7 @@ Aiming to select the best method to solve the numerical model regarging the inco
     <th><img src="./Figures/Convergence/methodscomparisonv.jpg" alt="geometry" height="350px"> </th>
   </tr>
   </table>
-  <figcaption> Fig. Residual logs obtained for different algorithms for incompressible flow solution.  Pressure (left), velocities (right). </figcaption>
+  <figcaption> Fig.13- Residual logs obtained for different algorithms for incompressible flow solution.  Pressure (left), velocities (right). </figcaption>
   <br> <br>
 </figure>
 
@@ -664,7 +664,7 @@ In order to select a proper timestep in the proposed CFD simulations, a previous
 The timestep values used in this evaluation are presented below:
 
 <table style="width:100%">
-    <caption style="text-align:right">Table. Steps and timesteps used for the independence study.</caption>
+    <caption style="text-align:right">Table 8. Steps and timesteps used for the independence study.</caption>
   <tr>
     <th>Steps</th>
     <th>Timestep (s)</th>
@@ -706,7 +706,7 @@ Then, the concentration profiles over the horizontal axis at y=0.007m is present
 
 <figure>
   <img src="./Figures/ScalarTranport/dtsensibility.png" alt="sensibility" width="700px">
-  <figcaption>Fig. Concentration profile over a horizontal axis at y=0.0007m.</figcaption>
+  <figcaption>Fig.14- Concentration profile over a horizontal axis at y=0.0007m.</figcaption>
   <br>
 <br>
 </figure>
@@ -718,7 +718,7 @@ Then, the residuals logs for each timestep are presented below:
 
 <figure>
   <img src="./Figures/ScalarTranport/dtsensibilityresidual.png" alt="sensibility2" width="700px">
-  <figcaption>Fig. Residuals obtained from the simulations varying the timestep.</figcaption>
+  <figcaption>Fig.15- Residuals obtained from the simulations varying the timestep.</figcaption>
   <br>
 <br>
 </figure>
