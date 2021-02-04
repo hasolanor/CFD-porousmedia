@@ -576,7 +576,7 @@ According to these plots, injection concentration is reached in all the spatial 
 In this annex, a mesh independence analysis is addressed. In that sense, three grids are proposed for this objective and the results obtained by the incompressible flow simulation are compared. These grids are generated using the ANSYS ICEM CFD software, and its features are presented in Table 7. Meshes 1 and 3 are shown in Figure 11 while mesh 2, corresponding to the base one, is plotted in Figure 2. Mesh 1 is more refined mesh than the base one while Mesh 3 is more coarse.
 
 <table>
-  <caption style="text-align:right">Table 7. Meshes features used .</caption>
+  <caption style="text-align:right">Table 7. Meshes features used for the mesh independence analysis.</caption>
   <tr>
     <th>ID</th>
     <th>Type</th>
