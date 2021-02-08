@@ -112,7 +112,8 @@ where <img src="https://render.githubusercontent.com/render/math?math=\normalsiz
 
 Considering that reactions are neglected, and Reynold number is low; the approximation proposed by Stokes-Einstein can be used to estimate the mass diffusion coefficient.
 
-<img src="https://render.githubusercontent.com/render/math?math=\Large D = \frac{k_b T}{3 \pi \nu \rho d_s }">
+<img src="https://render.githubusercontent.com/render/math?math=\Large D = \frac{k_b T}{3 \pi \nu \rho d_s} ">
+
 
 where <img src="https://render.githubusercontent.com/render/math?math=\normalsize k_b"> is the Boltzman constant (1.38e-23 J/K) and <img src="https://render.githubusercontent.com/render/math?math=\normalsize d_s"> is the diameter of the specie.
 
@@ -140,7 +141,7 @@ where <img src="https://render.githubusercontent.com/render/math?math=\normalsiz
 where <img src="https://render.githubusercontent.com/render/math?math=\normalsize s_{max}"> is the solid surface capacity, and
 where <img src="https://render.githubusercontent.com/render/math?math=\normalsize k_a"> is the kinetic constants representing attachment rate of the species onto/from the rock surface.
 
-The solid surface capacity can be estimated based on a surface occupancy by the next equation:
+Meanwhile, solid surface capacity can be estimated based on a surface occupancy by the next equation:
 
 <img src="https://render.githubusercontent.com/render/math?math=\Large s_{max} = \frac{\pi}{6}  a_s \rho_s d_s ">
 
