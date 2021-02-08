@@ -1,6 +1,5 @@
 # Transport Dynamics of Chemical Species in Porous Media: a 2D CFD study at the pore-scale
 Hillmert A. Solano
-## Presentation (video)
 
 ## 1. Introduction
 The injection of tailored solutions with chemical species, such as polymers, surfactants, nanoparticles, salts, and others; has become very common in subsurface engineering applications. Enhanced Oil Recovery (EOR) operations are a good example of these applications, in which chemical species are used to generate or favour different interactions that improve oil and gas production from hydrocarbons reservoirs. On another vein, the remotion of non-aqueous liquid phases (NAPL) and solid pollutants from soil and groundwater bodies can be improved using chemical species. Furthermore, recent studies show a positive impact on the carbon dioxide storage capacity when a Geological Carbon Sequestration (GCS) operation is upgraded using chemical species. All the above accounts for the importance of the study of chemical species behaviour in porous media targeting to improving its understanding and the design process of these operations.
